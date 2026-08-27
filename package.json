@@ -1,0 +1,20 @@
+{
+  "name": "valenti-atelier-ecommerce",
+  "version": "1.0.0",
+  "description": "Premium Full MERN Clothing E-Commerce Website & Admin Dashboard",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seed.js",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": ["mern", "ecommerce", "fashion", "react", "express", "mongodb", "nodejs"],
+  "author": "VALENTI Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
