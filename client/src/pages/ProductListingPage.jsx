@@ -275,10 +275,10 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                   All Categories
                 </button>
                 {(genderParam === 'women'
-                  ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts']
+                  ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
                   : genderParam === 'men'
                   ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
-                  : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts']
+                  : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
                 ).map((cat) => (
                   <button
                     key={cat}
@@ -490,10 +490,10 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                 >
                   <option value="all">All Categories</option>
                   {(genderParam === 'women'
-                    ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts']
+                    ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
                     : genderParam === 'men'
                     ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
-                    : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts']
+                    : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
                   ).map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}

@@ -113,6 +113,41 @@ const categoriesData = [
       { name: 'Wide-Leg Trousers', slug: 'wide-leg', description: 'High-waisted draped silhouette' },
       { name: 'Satin Skirts', slug: 'satin-skirts', description: 'Liquid silk drape' }
     ]
+  },
+  {
+    name: 'Knitwear & Cashmere',
+    slug: 'knitwear-women',
+    gender: 'women',
+    description: 'Fine 18-gauge Mongolian cashmere turtlenecks, cable-knit sweaters, and ribbed cardigans.',
+    image: 'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&q=80',
+    subcategories: [
+      { name: 'Cashmere Sweaters', slug: 'cashmere-sweaters', description: 'Pure 100% cashmere knitwear' },
+      { name: 'Ribbed Cardigans', slug: 'ribbed-cardigans', description: 'Fluid draped buttoned cardigans' },
+      { name: 'Turtlenecks', slug: 'turtlenecks', description: 'Fine-gauge high-neck layering' }
+    ]
+  },
+  {
+    name: 'Co-ord Sets & Suits',
+    slug: 'coord-sets-women',
+    gender: 'women',
+    description: 'Matching tailored blazer-trouser duos, bouclé skirt sets, and silk lounge coordinates.',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80',
+    subcategories: [
+      { name: 'Trouser Suits', slug: 'trouser-suits', description: '2-Piece tailored power coordinates' },
+      { name: 'Skirt Sets', slug: 'skirt-sets', description: 'Tweed and crepe cropped top & skirt sets' },
+      { name: 'Silk Lounge Sets', slug: 'silk-lounge-sets', description: 'Resort-ready matching silk ensembles' }
+    ]
+  },
+  {
+    name: 'Luxury Loungewear & Robes',
+    slug: 'loungewear-women',
+    gender: 'women',
+    description: 'Floor-length mulberry silk kimonos, lace-trimmed cami sets, and plush velvet house robes.',
+    image: 'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=800&q=80',
+    subcategories: [
+      { name: 'Silk Kimonos & Robes', slug: 'silk-kimonos', description: '100% Mulberry silk printed robes' },
+      { name: 'Cami Pajama Sets', slug: 'pajama-sets', description: 'Delicate lace and satin nightwear' }
+    ]
   }
 ];
 
@@ -1788,6 +1823,1089 @@ const productsData = [
     isFeatured: false,
     isNewArrival: true,
     isBestSeller: false
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 5: KNITWEAR & CASHMERE (10 Products)
+  // ==========================================
+  {
+    name: 'Mongolian Pure Cashmere Turtleneck Sweater',
+    slug: 'mongolian-pure-cashmere-turtleneck-sweater',
+    brand: 'VALENTI',
+    description: 'Spun from 100% grade-A 2-ply Mongolian cashmere with seamless raglan sleeves, ribbed fold-over collar, and ultra-plush cloud-like handfeel.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Turtlenecks',
+    gender: 'women',
+    price: 8999,
+    salePrice: 7499,
+    images: [
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Grade-A Mongolian Cashmere (15.5 Micron)',
+    careInstructions: 'Hand wash cold with wool shampoo. Dry flat.',
+    specifications: [
+      { key: 'Gauge', value: '12-Gauge Fine Knit' },
+      { key: 'Neckline', value: 'High Foldover Ribbed Turtleneck' }
+    ],
+    rating: 5.0,
+    reviewCount: 42,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Silk-Cashmere Fine Ribbed Draped Cardigan',
+    slug: 'silk-cashmere-fine-ribbed-draped-cardigan',
+    brand: 'VALENTI',
+    description: 'Elongated open-front cardigan featuring mother-of-pearl buttons, self-tie sash belt, and deep patch pockets.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Ribbed Cardigans',
+    gender: 'women',
+    price: 9499,
+    salePrice: 7999,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true },
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '70% Mongolian Cashmere, 30% Mulberry Silk',
+    careInstructions: 'Specialist dry clean or cold hand wash.',
+    specifications: [
+      { key: 'Length', value: '88cm Knee Length' },
+      { key: 'Closure', value: 'Removable Tie Belt & 4 Horn Buttons' }
+    ],
+    rating: 4.9,
+    reviewCount: 33,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Chunky Cable-Knit Cashmere Crewneck',
+    slug: 'chunky-cable-knit-cashmere-crewneck',
+    brand: 'VALENTI',
+    description: 'Heritage diamond cable-stitch pattern knitted from 4-ply heavyweight cashmere yarn for warmth and quiet luxury texture.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Cashmere Sweaters',
+    gender: 'women',
+    price: 11499,
+    salePrice: 9999,
+    images: [
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
+      { name: 'Raw Sand', hex: '#D2B48C', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% 4-Ply Heavyweight Cashmere',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Pattern', value: 'Traditional Diamond & Honeycomb Cable' },
+      { key: 'Fit', value: 'Relaxed Tailored Fit' }
+    ],
+    rating: 4.9,
+    reviewCount: 29,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Seamless Merino-Silk Boatneck Sweater',
+    slug: 'seamless-merino-silk-boatneck-sweater',
+    brand: 'VALENTI',
+    description: 'Engineered on 3D WHOLEGARMENT looms with zero seams for an immaculate clean drape across the collarbones.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Cashmere Sweaters',
+    gender: 'women',
+    price: 6499,
+    salePrice: 5199,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 10 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '75% Extra-Fine Merino Wool, 25% Silk',
+    careInstructions: 'Hand wash cold. Dry flat in shade.',
+    specifications: [
+      { key: 'Collar', value: 'Wide Elegant Boatneck' },
+      { key: 'Technology', value: 'Zero-Waste Seamless Knit' }
+    ],
+    rating: 4.8,
+    reviewCount: 21,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Cashmere V-Neck Wrap Polo Jumper',
+    slug: 'cashmere-v-neck-wrap-polo-jumper',
+    brand: 'VALENTI',
+    description: 'A crossover silhouette combining a deep V-neck with soft polo lapels and ribbed cuffs.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Cashmere Sweaters',
+    gender: 'women',
+    price: 7999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Grade-A Cashmere',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Neckline', value: 'Deep V-Neck with Polo Collar' },
+      { key: 'Sleeve', value: 'Slim Ribbed Long Sleeve' }
+    ],
+    rating: 4.8,
+    reviewCount: 19,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Oversized Cashmere Poncho Shawl',
+    slug: 'oversized-cashmere-poncho-shawl',
+    brand: 'VALENTI',
+    description: 'Generously proportioned draped wrap with fringed hand-twisted hem and soft mock-neck opening.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Ribbed Cardigans',
+    gender: 'women',
+    price: 10999,
+    salePrice: 8999,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'Free Size', stock: 18 }
+    ],
+    material: '100% Mongolian Cashmere Brushed Fleece',
+    careInstructions: 'Specialist dry clean.',
+    specifications: [
+      { key: 'Dimensions', value: '140cm x 160cm Oversized Drape' },
+      { key: 'Fringe', value: '10cm Hand-Twisted Silk Fringe' }
+    ],
+    rating: 5.0,
+    reviewCount: 38,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Fine-Gauge Silk-Wool Ribbed Turtleneck',
+    slug: 'fine-gauge-silk-wool-ribbed-turtleneck',
+    brand: 'VALENTI',
+    description: 'Ultra-slender second-skin layering piece in 18-gauge silk-merino blend with subtle sheer sleeve details.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Turtlenecks',
+    gender: 'women',
+    price: 4999,
+    salePrice: 3999,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 12 },
+      { size: 'S', stock: 20 },
+      { size: 'M', stock: 18 },
+      { size: 'L', stock: 10 }
+    ],
+    material: '55% Mulberry Silk, 45% Fine Merino Wool',
+    careInstructions: 'Machine wash delicate wool cycle.',
+    specifications: [
+      { key: 'Rib', value: '1x1 Micro Rib Structure' },
+      { key: 'Fit', value: 'Second-Skin Contoured Layering' }
+    ],
+    rating: 4.9,
+    reviewCount: 45,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Cropped Cashmere Cardigan with Pearl Buttons',
+    slug: 'cropped-cashmere-cardigan-with-pearl-buttons',
+    brand: 'VALENTI',
+    description: 'Vintage Parisienne cropped knit fitted with natural South Sea baroque pearl buttons and scallop edge cuffs.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Ribbed Cardigans',
+    gender: 'women',
+    price: 8499,
+    salePrice: 6999,
+    images: [
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Ivory White', hex: '#FFFFF5', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Cashmere with Silk Hand-Finished Placket',
+    careInstructions: 'Hand wash cold. Dry flat.',
+    specifications: [
+      { key: 'Buttons', value: 'Hand-Selected Genuine Baroque Pearls' },
+      { key: 'Length', value: '46cm High-Waist Crop' }
+    ],
+    rating: 4.9,
+    reviewCount: 30,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Relaxed Cashmere Hoodie & Lounge Sweater',
+    slug: 'relaxed-cashmere-hoodie-lounge-sweater',
+    brand: 'VALENTI',
+    description: 'Sport-luxe comfort elevated with 100% pure cashmere, knitted drawstrings with gold tips, and seamless kangaroo pocket.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Cashmere Sweaters',
+    gender: 'women',
+    price: 9999,
+    salePrice: 8499,
+    images: [
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Raw Sand', hex: '#D2B48C', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Grade-A Mongolian Cashmere',
+    careInstructions: 'Dry clean or cold hand wash.',
+    specifications: [
+      { key: 'Hardware', value: '24k Gold-Plated Drawstring Aglets' },
+      { key: 'Fit', value: 'Relaxed Cocoon Silhouette' }
+    ],
+    rating: 4.8,
+    reviewCount: 27,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Two-Tone Cashmere Ribbed Sleeveless Turtleneck',
+    slug: 'two-tone-cashmere-ribbed-sleeveless-turtleneck',
+    brand: 'VALENTI',
+    description: 'Sculptural sleeveless high-neck knit with contrast interior neck trim and extended side vents for effortless styling.',
+    category: 'Knitwear & Cashmere',
+    subcategory: 'Turtlenecks',
+    gender: 'women',
+    price: 6999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '85% Cashmere, 15% Silk',
+    careInstructions: 'Hand wash cold.',
+    specifications: [
+      { key: 'Armhole', value: 'Cutaway Shoulder Silhouette' },
+      { key: 'Vent', value: '15cm Stepped Side Slits' }
+    ],
+    rating: 4.7,
+    reviewCount: 16,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 6: CO-ORD SETS & SUITS (10 Products)
+  // ==========================================
+  {
+    name: 'Italian Tweed Cropped Jacket & Mini Skirt Set',
+    slug: 'italian-tweed-cropped-jacket-mini-skirt-set',
+    brand: 'VALENTI',
+    description: 'A 2-piece set in pastel French tweed woven with iridescent lurex yarns. Includes cropped buttoned jacket and matching high-waisted mini skirt.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Skirt Sets',
+    gender: 'women',
+    price: 14999,
+    salePrice: 12499,
+    images: [
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80',
+      'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: 'Italian Cotton-Wool Bouclé Tweed with Bemberg Lining',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Jacket + Matching A-Line Skirt' },
+      { key: 'Buttons', value: 'Engraved Lion Crest Gold Buttons' }
+    ],
+    rating: 5.0,
+    reviewCount: 44,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Tailored Tuxedo Blazer & Wide Trouser 2-Piece Suit',
+    slug: 'tailored-tuxedo-blazer-wide-trouser-2-piece-suit',
+    brand: 'VALENTI',
+    description: 'The pinnacle of power suiting. Featuring a sculpted double-breasted tuxedo blazer and matching fluid high-waisted wide-leg trousers.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Trouser Suits',
+    gender: 'women',
+    price: 16999,
+    salePrice: 13999,
+    images: [
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: 'Super 130s Italian Wool Crepe with Satin Lapels',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Double-Breasted Jacket + Wide Trouser' },
+      { key: 'Lapel', value: 'Silk Duchesse Peaked Lapels' }
+    ],
+    rating: 5.0,
+    reviewCount: 52,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Mulberry Silk Charmeuse Pajama Lounge Set',
+    slug: 'mulberry-silk-charmeuse-pajama-lounge-set',
+    brand: 'VALENTI',
+    description: '2-piece resort ensemble with contrast piped lapels, chest pocket, and fluid elasticized wide-leg silk trousers.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Silk Lounge Sets',
+    gender: 'women',
+    price: 9999,
+    salePrice: 8299,
+    images: [
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% 22-Momme Mulberry Silk Charmeuse',
+    careInstructions: 'Hand wash cold with silk wash or gentle dry clean.',
+    specifications: [
+      { key: 'Set Includes', value: 'Button-Down Shirt + Full Trouser' },
+      { key: 'Piping', value: 'Hand-Set Satin Contrast Cord Piping' }
+    ],
+    rating: 4.9,
+    reviewCount: 39,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'French Normandy Linen Vest & Culotte Set',
+    slug: 'french-normandy-linen-vest-culotte-set',
+    brand: 'VALENTI',
+    description: 'Sun-drenched summer tailoring. Tailored buttoned waistcoat paired with high-rise pleated wide culottes in breathable French flax.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Trouser Suits',
+    gender: 'women',
+    price: 8499,
+    salePrice: 6999,
+    images: [
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Raw Sand', hex: '#D2B48C', inStock: true },
+      { name: 'Crisp White', hex: '#FFFFFF', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Normandy Flax Linen (Garment Washed)',
+    careInstructions: 'Machine wash cold gentle. Line dry in shade.',
+    specifications: [
+      { key: 'Set Includes', value: '4-Button Waistcoat + Pleated Culottes' },
+      { key: 'Buttons', value: 'Carved Natural Horn Buttons' }
+    ],
+    rating: 4.8,
+    reviewCount: 28,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Satin Corset & Bias Maxi Skirt Gala Duo',
+    slug: 'satin-corset-bias-maxi-skirt-gala-duo',
+    brand: 'VALENTI',
+    description: 'Exquisite gala set featuring an underwired boned sweetheart corset and an ankle-grazing liquid silk mermaid skirt.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Skirt Sets',
+    gender: 'women',
+    price: 11999,
+    salePrice: 9999,
+    images: [
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true },
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: 'Heavy Duchesse Satin with Silk Habotai Lining',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Boned Bustier + Fishtail Skirt' },
+      { key: 'Corset', value: 'Steel Boned with Lace-Up Back' }
+    ],
+    rating: 4.9,
+    reviewCount: 36,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Velvet Smoking Jacket & Cigarette Trouser Suit',
+    slug: 'velvet-smoking-jacket-cigarette-trouser-suit',
+    brand: 'VALENTI',
+    description: 'Lush silk-velvet ensemble featuring a shawl-lapel evening blazer and razor-creased ankle-length cigarette pants.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Trouser Suits',
+    gender: 'women',
+    price: 18499,
+    salePrice: 15499,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Burgundy', hex: '#800020', inStock: true },
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 4 },
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: '80% Silk, 20% Rayon Italian Velvet',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Smoking Jacket + Tailored Trouser' },
+      { key: 'Lapel', value: 'Black Silk Duchesse Shawl Lapel' }
+    ],
+    rating: 5.0,
+    reviewCount: 31,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Draped Silk Halter & Palazzo Resort Set',
+    slug: 'draped-silk-halter-palazzo-resort-set',
+    brand: 'VALENTI',
+    description: 'Bespoke holiday glamour. Open-back silk halter neck top paired with floor-sweeping double-pleated palazzo trousers.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Silk Lounge Sets',
+    gender: 'women',
+    price: 10499,
+    salePrice: 8799,
+    images: [
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 7 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Silk Crepe-de-Chine',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Set Includes', value: 'Backless Halter Top + Palazzo Pants' },
+      { key: 'Waist', value: 'High-Rise Flat Front Waistband' }
+    ],
+    rating: 4.8,
+    reviewCount: 22,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Oversized Blazer & Pleated Bermudas Suit',
+    slug: 'oversized-blazer-pleated-bermudas-suit',
+    brand: 'VALENTI',
+    description: 'Modern summer boardroom suiting featuring an oversized single-breasted blazer and knee-grazing tailored Bermuda shorts.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Trouser Suits',
+    gender: 'women',
+    price: 12499,
+    salePrice: 9999,
+    images: [
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: 'Tropical Weight Virgin Wool & Mohair Blend',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Boxy Blazer + Tailored Bermuda Shorts' },
+      { key: 'Hem', value: 'Cuffed Bermuda Inseam 28cm' }
+    ],
+    rating: 4.7,
+    reviewCount: 19,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Jacquard Brocade Peplum & Pencil Skirt Set',
+    slug: 'jacquard-brocade-peplum-pencil-skirt-set',
+    brand: 'VALENTI',
+    description: 'Regal metallic brocade coordinate with structured peplum waist top and matching high-waisted knee-length pencil skirt.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Skirt Sets',
+    gender: 'women',
+    price: 13999,
+    salePrice: 11499,
+    images: [
+      'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Baroque Gold', hex: '#C5A059', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: 'Italian Metallic Floral Jacquard Brocade',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Set Includes', value: 'Peplum Top + Pencil Skirt' },
+      { key: 'Closure', value: 'Exposed Gold Metal Back Zippers' }
+    ],
+    rating: 4.9,
+    reviewCount: 25,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Cashmere Knit Sweater & Flute Midi Skirt Set',
+    slug: 'cashmere-knit-sweater-flute-midi-skirt-set',
+    brand: 'VALENTI',
+    description: 'Sumptuously soft ribbed cashmere duo featuring a mock-neck pullover and matching fluted knit midi skirt.',
+    category: 'Co-ord Sets & Suits',
+    subcategory: 'Skirt Sets',
+    gender: 'women',
+    price: 15499,
+    salePrice: 12999,
+    images: [
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true },
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Grade-A Mongolian Cashmere',
+    careInstructions: 'Hand wash cold. Dry flat.',
+    specifications: [
+      { key: 'Set Includes', value: 'Mock-Neck Jumper + Fluted Knit Skirt' },
+      { key: 'Gauge', value: '7-Gauge Medium Rib' }
+    ],
+    rating: 5.0,
+    reviewCount: 37,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 7: LUXURY LOUNGEWEAR & ROBES (10 Products)
+  // ==========================================
+  {
+    name: 'Hand-Painted Silk Kimono Maxi Robe',
+    slug: 'hand-painted-silk-kimono-maxi-robe',
+    brand: 'VALENTI',
+    description: 'Floor-length dressing gown in 22-momme pure silk charmeuse, featuring artisanal botanical prints, wide sash belt, and flowing sleeves.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Silk Kimonos & Robes',
+    gender: 'women',
+    price: 13999,
+    salePrice: 11499,
+    images: [
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true },
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true }
+    ],
+    sizes: [
+      { size: 'S/M', stock: 15 },
+      { size: 'L/XL', stock: 10 }
+    ],
+    material: '100% Pure Mulberry Silk Charmeuse (22 Momme)',
+    careInstructions: 'Professional dry clean or hand wash cold with silk detergent.',
+    specifications: [
+      { key: 'Length', value: '135cm Ankle-Grazing Maxi' },
+      { key: 'Sleeves', value: 'Traditional Wide Kimono Cut' }
+    ],
+    rating: 5.0,
+    reviewCount: 47,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'French Lace-Trimmed Silk Camisole & Shorts Set',
+    slug: 'french-lace-trimmed-silk-camisole-shorts-set',
+    brand: 'VALENTI',
+    description: 'Sensual nightwear set in liquid silk satin with Calais lace along the neckline, hemline, and side split shorts.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 5999,
+    salePrice: 4899,
+    images: [
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80',
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% Silk Charmeuse & Calais Floral Lace',
+    careInstructions: 'Hand wash cold with silk shampoo.',
+    specifications: [
+      { key: 'Set Includes', value: 'Lace Cami + High-Rise Flirty Shorts' },
+      { key: 'Straps', value: 'Adjustable Silk Spaghetti Straps' }
+    ],
+    rating: 4.9,
+    reviewCount: 38,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Plush Cashmere-Lined Velvet House Robe',
+    slug: 'plush-cashmere-lined-velvet-house-robe',
+    brand: 'VALENTI',
+    description: 'The epitome of winter leisure. Heavy cotton-silk velvet exterior lined completely with cloud-soft featherweight cashmere.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Silk Kimonos & Robes',
+    gender: 'women',
+    price: 19999,
+    salePrice: 16999,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Burgundy', hex: '#800020', inStock: true },
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 6 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: 'Exterior: Silk Velvet / Lining: 100% Mongolian Cashmere',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Weight', value: 'Heavyweight Luxe Winter Robe' },
+      { key: 'Pockets', value: 'Dual Deep Cashmere-Lined Welt Pockets' }
+    ],
+    rating: 5.0,
+    reviewCount: 31,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Mulberry Silk Longline Button-Front Nightshirt',
+    slug: 'mulberry-silk-longline-button-front-nightshirt',
+    brand: 'VALENTI',
+    description: 'Boyfriend-cut sleep shirt in heavyweight 22-momme silk charmeuse with notched collar and mother-of-pearl buttons.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 6999,
+    salePrice: 5699,
+    images: [
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
+      { name: 'Sky Azure', hex: '#A4C8E1', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Grade-6A Mulberry Silk',
+    careInstructions: 'Hand wash cold or dry clean.',
+    specifications: [
+      { key: 'Cut', value: 'Relaxed Boyfriend Silhouette' },
+      { key: 'Length', value: '92cm Mid-Thigh Length' }
+    ],
+    rating: 4.8,
+    reviewCount: 25,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Modal-Silk Ribbed Lounge Jumpsuit',
+    slug: 'modal-silk-ribbed-lounge-jumpsuit',
+    brand: 'VALENTI',
+    description: 'Effortless all-in-one lounge luxury with scooped neckline, elastic drawstring waist, and relaxed tapered ankle cuffs.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 4999,
+    salePrice: 3999,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Classic Black', hex: '#151515', inStock: true },
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 10 },
+      { size: 'S', stock: 18 },
+      { size: 'M', stock: 15 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '80% Micro Modal, 15% Silk, 5% Elastane',
+    careInstructions: 'Machine wash gentle cold.',
+    specifications: [
+      { key: 'Waist', value: 'Encased Elastic with Silk Ribbon Tie' },
+      { key: 'Pockets', value: 'Slanted Hip Pockets' }
+    ],
+    rating: 4.8,
+    reviewCount: 29,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Short Silk Kimono Robe with Feather Trim',
+    slug: 'short-silk-kimono-robe-with-feather-trim',
+    brand: 'VALENTI',
+    description: 'Glamorous boudoir robe trimmed with detachable ethically sourced ostrich feathers along the sleeve cuffs.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Silk Kimonos & Robes',
+    gender: 'women',
+    price: 11499,
+    salePrice: 9499,
+    images: [
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Jet Noir', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Silk Charmeuse with Detachable Ostrich Feathers',
+    careInstructions: 'Remove feathers before dry cleaning.',
+    specifications: [
+      { key: 'Trim', value: 'Detachable Snap-On Ostrich Feathers' },
+      { key: 'Length', value: '85cm Above Knee' }
+    ],
+    rating: 4.9,
+    reviewCount: 34,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Silk Slip Dress Nightgown with French Lace',
+    slug: 'silk-slip-dress-nightgown-with-french-lace',
+    brand: 'VALENTI',
+    description: 'Pure 19-momme silk chemise with deep V-neck lace bodice, cross-back skinny straps, and side slit.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 5499,
+    salePrice: 4499,
+    images: [
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Pure Mulberry Silk',
+    careInstructions: 'Hand wash cold. Dry in shade.',
+    specifications: [
+      { key: 'Back', value: 'Criss-Cross Adjustable Skinny Straps' },
+      { key: 'Cut', value: 'Bias-Cut Floating Chemise' }
+    ],
+    rating: 4.9,
+    reviewCount: 41,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Quilted Velvet Robe with Satin Trim',
+    slug: 'quilted-velvet-robe-with-satin-trim',
+    brand: 'VALENTI',
+    description: 'Diamond-quilted cotton velvet wrap robe with thick satin lapels and quilted tie belt for decadent evenings.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Silk Kimonos & Robes',
+    gender: 'women',
+    price: 14499,
+    salePrice: 11999,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Burgundy', hex: '#800020', inStock: true },
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 6 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: 'Silk-Cotton Velvet with Habotai Silk Lining',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Quilting', value: 'Micro Diamond Padded Quilting' },
+      { key: 'Length', value: '120cm Midi Length' }
+    ],
+    rating: 4.8,
+    reviewCount: 20,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Washed Mulberry Silk 3-Piece Pajama Set',
+    slug: 'washed-mulberry-silk-3-piece-pajama-set',
+    brand: 'VALENTI',
+    description: 'Complete 3-piece sleep wardrobe: includes silk camisole, wide-leg trousers, and matching belted kimono robe.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 16999,
+    salePrice: 13999,
+    images: [
+      'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true },
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: '100% Washed Mulberry Silk Charmeuse (Matte Lustre)',
+    careInstructions: 'Dry clean or delicate hand wash.',
+    specifications: [
+      { key: 'Set Includes', value: 'Robe + Camisole + Wide Trousers' },
+      { key: 'Finish', value: 'Sandwashed Silky Matte Handfeel' }
+    ],
+    rating: 5.0,
+    reviewCount: 46,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Organic Cashmere-Silk Knit Lounge Trousers',
+    slug: 'organic-cashmere-silk-knit-lounge-trousers',
+    brand: 'VALENTI',
+    description: 'Fluid wide-leg knit lounge pants with wide ribbed waistband and continuous seamless knit construction.',
+    category: 'Luxury Loungewear & Robes',
+    subcategory: 'Cami Pajama Sets',
+    gender: 'women',
+    price: 7499,
+    salePrice: 6299,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '70% Organic Cashmere, 30% Mulberry Silk',
+    careInstructions: 'Hand wash cold. Lay flat to dry.',
+    specifications: [
+      { key: 'Fit', value: 'Straight Wide Fluid Leg' },
+      { key: 'Waist', value: 'High-Rise Seamless Ribbed Waist' }
+    ],
+    rating: 4.9,
+    reviewCount: 28,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
   }
 ];
 
