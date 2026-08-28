@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Eye, ShoppingBag, Star } from 'lucide-react';
+import { Heart, Eye, ShoppingBag, Star, Check, Sparkles } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { useWishlist } from '../../context/WishlistContext';
 
@@ -10,6 +10,7 @@ const ProductCard = ({ product, onQuickView }) => {
 
   const [isHovered, setIsHovered] = useState(false);
   const [selectedColor, setSelectedColor] = useState(product.colors?.[0]?.name || 'Default');
+  const [addedSizeFeedback, setAddedSizeFeedback] = useState(null);
 
   const isFavorited = isInWishlist(product._id);
 
@@ -27,19 +28,24 @@ const ProductCard = ({ product, onQuickView }) => {
     e.preventDefault();
     e.stopPropagation();
     addToCart(product, size, selectedColor, 1);
+    setAddedSizeFeedback(size);
+    setTimeout(() => {
+      setAddedSizeFeedback(null);
+    }, 1400);
   };
 
   return (
     <div
+      className="card-luxury-hover"
       style={{
         display: 'flex',
         flexDirection: 'column',
         position: 'relative',
-        borderRadius: 'var(--radius-sm)',
+        borderRadius: 'var(--radius-xs)',
         backgroundColor: '#FFFFFF',
         overflow: 'hidden',
-        boxShadow: 'var(--shadow-sm)',
-        transition: 'all var(--transition-normal)'
+        border: '1px solid var(--border-light)',
+        boxShadow: 'var(--shadow-sm)'
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -60,8 +66,8 @@ const ProductCard = ({ product, onQuickView }) => {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
-              transform: isHovered ? 'scale(1.06)' : 'scale(1)'
+              transition: 'transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease',
+              transform: isHovered ? 'scale(1.05)' : 'scale(1)'
             }}
             loading="lazy"
           />
@@ -70,13 +76,13 @@ const ProductCard = ({ product, onQuickView }) => {
         {/* Badges */}
         <div style={{ position: 'absolute', top: '12px', left: '12px', display: 'flex', flexDirection: 'column', gap: '6px', zIndex: 10 }}>
           {hasDiscount && (
-            <span className="badge badge-sale">
+            <span className="badge badge-sale" style={{ boxShadow: '0 2px 8px rgba(158, 38, 37, 0.3)' }}>
               {discountPercent}% OFF
             </span>
           )}
           {product.isNewArrival && (
             <span className="badge badge-new">
-              NEW
+              NEW SEASON
             </span>
           )}
           {product.isBestSeller && !product.isNewArrival && (
@@ -101,17 +107,20 @@ const ProductCard = ({ product, onQuickView }) => {
             width: '36px',
             height: '36px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            backgroundColor: 'rgba(255, 255, 255, 0.92)',
+            backdropFilter: 'blur(6px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: isFavorited ? '#E53E3E' : 'var(--text-primary)',
-            boxShadow: 'var(--shadow-sm)',
+            color: isFavorited ? '#D32F2F' : 'var(--text-primary)',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
             zIndex: 10,
             transition: 'all var(--transition-fast)'
           }}
+          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
         >
-          <Heart size={18} fill={isFavorited ? '#E53E3E' : 'none'} />
+          <Heart size={18} fill={isFavorited ? '#D32F2F' : 'none'} color={isFavorited ? '#D32F2F' : 'var(--text-primary)'} />
         </button>
 
         {/* Quick View Button */}
@@ -124,22 +133,31 @@ const ProductCard = ({ product, onQuickView }) => {
           aria-label="Quick View"
           style={{
             position: 'absolute',
-            bottom: isHovered ? '54px' : '-45px',
+            bottom: isHovered ? '56px' : '-45px',
             right: '12px',
             width: '36px',
             height: '36px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            backdropFilter: 'blur(6px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             color: 'var(--text-primary)',
-            boxShadow: 'var(--shadow-sm)',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
             zIndex: 10,
             transition: 'all var(--transition-normal)'
           }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = 'var(--bg-dark)';
+            e.currentTarget.style.color = '#FFFFFF';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            e.currentTarget.style.color = 'var(--text-primary)';
+          }}
         >
-          <Eye size={18} />
+          <Eye size={17} />
         </button>
 
         {/* Quick Size Selector Bar (Slides in on hover) */}
@@ -150,8 +168,8 @@ const ProductCard = ({ product, onQuickView }) => {
             left: 0,
             right: 0,
             padding: '8px 12px',
-            backgroundColor: 'rgba(15, 17, 21, 0.92)',
-            backdropFilter: 'blur(4px)',
+            backgroundColor: 'rgba(13, 15, 18, 0.92)',
+            backdropFilter: 'blur(8px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -161,41 +179,65 @@ const ProductCard = ({ product, onQuickView }) => {
             zIndex: 10
           }}
         >
-          <span style={{ fontSize: '0.72rem', color: 'var(--accent-gold)', textTransform: 'uppercase', fontWeight: '600', letterSpacing: '0.04em' }}>
-            Quick Add:
-          </span>
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-            {product.sizes?.slice(0, 5).map((s) => (
-              <button
-                key={s.size}
-                disabled={s.stock === 0}
-                onClick={(e) => handleQuickAdd(e, s.size)}
-                style={{
-                  padding: '2px 8px',
-                  fontSize: '0.75rem',
-                  fontWeight: '600',
-                  color: s.stock === 0 ? '#666' : '#FFFFFF',
-                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
-                  borderRadius: '3px',
-                  textDecoration: s.stock === 0 ? 'line-through' : 'none'
-                }}
-              >
-                {s.size}
-              </button>
-            ))}
-          </div>
+          {addedSizeFeedback ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#81C784', fontSize: '0.78rem', fontWeight: '700' }}>
+              <Check size={15} /> Size {addedSizeFeedback} added to bag
+            </div>
+          ) : (
+            <>
+              <span style={{ fontSize: '0.7rem', color: 'var(--accent-gold)', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '0.06em' }}>
+                Quick Add:
+              </span>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {product.sizes?.slice(0, 5).map((s) => (
+                  <button
+                    key={s.size}
+                    disabled={s.stock === 0}
+                    onClick={(e) => handleQuickAdd(e, s.size)}
+                    style={{
+                      padding: '2px 8px',
+                      fontSize: '0.72rem',
+                      fontWeight: '700',
+                      color: s.stock === 0 ? '#666' : '#FFFFFF',
+                      backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                      border: '1px solid rgba(255, 255, 255, 0.25)',
+                      borderRadius: '2px',
+                      textDecoration: s.stock === 0 ? 'line-through' : 'none',
+                      transition: 'all var(--transition-fast)'
+                    }}
+                    onMouseEnter={(e) => {
+                      if (s.stock > 0) {
+                        e.currentTarget.style.backgroundColor = 'var(--accent-gold)';
+                        e.currentTarget.style.color = '#000';
+                        e.currentTarget.style.borderColor = 'var(--accent-gold)';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (s.stock > 0) {
+                        e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+                        e.currentTarget.style.color = '#FFFFFF';
+                        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+                      }
+                    }}
+                  >
+                    {s.size}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
 
       {/* Product Details info */}
-      <div style={{ padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+      <div style={{ padding: '1.1rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '600' }}>
             {product.brand} • {product.category}
           </span>
           {product.rating && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '3px', fontSize: '0.75rem', color: 'var(--accent-gold-hover)', fontWeight: '600' }}>
-              <Star size={13} fill="var(--accent-gold)" color="var(--accent-gold)" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '3px', fontSize: '0.75rem', color: 'var(--accent-gold-hover)', fontWeight: '700' }}>
+              <Star size={12} fill="var(--accent-gold)" color="var(--accent-gold)" />
               <span>{product.rating}</span>
             </div>
           )}
@@ -203,26 +245,30 @@ const ProductCard = ({ product, onQuickView }) => {
 
         <Link to={`/product/${product._id}`}>
           <h3 style={{
-            fontSize: '0.95rem',
+            fontSize: '0.92rem',
             color: 'var(--text-primary)',
             fontFamily: 'var(--font-sans)',
             fontWeight: '600',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            marginTop: '2px'
-          }}>
+            marginTop: '2px',
+            transition: 'color var(--transition-fast)'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-gold-hover)'}
+          onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-primary)'}
+          >
             {product.name}
           </h3>
         </Link>
 
         {/* Pricing */}
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginTop: '4px' }}>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginTop: '3px' }}>
           <span style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-primary)' }}>
             ₹{price.toLocaleString()}
           </span>
           {hasDiscount && (
-            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', textDecoration: 'line-through' }}>
+            <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)', textDecoration: 'line-through' }}>
               ₹{product.price.toLocaleString()}
             </span>
           )}
@@ -230,7 +276,7 @@ const ProductCard = ({ product, onQuickView }) => {
 
         {/* Color Swatches */}
         {product.colors && product.colors.length > 0 && (
-          <div style={{ display: 'flex', gap: '6px', marginTop: '4px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
             {product.colors.map((color) => (
               <button
                 key={color.name}
@@ -244,11 +290,17 @@ const ProductCard = ({ product, onQuickView }) => {
                   height: '14px',
                   borderRadius: '50%',
                   backgroundColor: color.hex,
-                  border: selectedColor === color.name ? '2px solid var(--accent-gold)' : '1px solid #CCCCCC',
-                  boxShadow: selectedColor === color.name ? '0 0 0 2px #FFFFFF' : 'none'
+                  border: selectedColor === color.name ? '2px solid var(--accent-gold)' : '1px solid #D5D1C6',
+                  boxShadow: selectedColor === color.name ? '0 0 0 2px #FFFFFF' : 'none',
+                  transition: 'transform var(--transition-fast)'
                 }}
+                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
+                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
               />
             ))}
+            <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', marginLeft: '4px' }}>
+              {selectedColor}
+            </span>
           </div>
         )}
       </div>
@@ -257,3 +309,4 @@ const ProductCard = ({ product, onQuickView }) => {
 };
 
 export default ProductCard;
+

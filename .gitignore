@@ -27,3 +27,7 @@ Thumbs.db
 .vite/
 client/.vite/
 
+# Large Archives
+*.zip
+
+

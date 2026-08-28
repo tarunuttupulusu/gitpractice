@@ -262,39 +262,97 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
         <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', gap: '3rem', alignItems: 'start' }} className="catalog-grid-wrapper">
           {/* Desktop Filter Sidebar */}
           <aside className="desktop-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            {/* Category Filter */}
+            {/* Category & Subcategory Filter */}
             <div>
               <h4 style={{ fontSize: '0.88rem', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1rem', borderBottom: '1px solid var(--border-light)', paddingBottom: '0.4rem' }}>
                 Categories
               </h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.88rem' }}>
                 <button
-                  onClick={() => updateFilter('category', 'all')}
+                  onClick={() => {
+                    updateFilter('category', 'all');
+                    updateFilter('subcategory', null);
+                  }}
                   style={{
                     textAlign: 'left',
                     color: !categoryParam ? 'var(--accent-gold-hover)' : 'var(--text-secondary)',
                     fontWeight: !categoryParam ? '700' : '400'
                   }}
                 >
-                  All Categories
+                  All {genderParam === 'men' ? "Men's " : genderParam === 'women' ? "Women's " : ''}Garments
                 </button>
-                {(genderParam === 'women'
-                  ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
-                  : genderParam === 'men'
-                  ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
-                  : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
-                ).map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => updateFilter('category', cat)}
-                    style={{
-                      textAlign: 'left',
-                      color: categoryParam === cat ? 'var(--accent-gold-hover)' : 'var(--text-secondary)',
-                      fontWeight: categoryParam === cat ? '700' : '400'
-                    }}
-                  >
-                    {cat}
-                  </button>
+                {(genderParam === 'men'
+                  ? [
+                      { name: 'Shirts', subs: ['Formal Shirts', 'Casual Shirts', 'Party Wear'] },
+                      { name: 'T-Shirts', subs: ['Polo', 'Solid'] },
+                      { name: 'Blazers & Suits', subs: ['Formal Blazers', 'Casual Blazers', 'Double-Breasted'] },
+                      { name: 'Trousers & Chinos', subs: ['Formal Trousers', 'Chinos'] },
+                      { name: 'Jeans', subs: ['Selvedge', 'Slim Fit', 'Straight Fit'] },
+                      { name: 'Knitwear', subs: ['Cashmere Knitwear', 'Merino Sweaters', 'Cardigans'] }
+                    ]
+                  : genderParam === 'women'
+                  ? [
+                      { name: 'Dresses', subs: ['Evening Gowns', 'Midi Dresses', 'Blazer Dresses'] },
+                      { name: 'Tops & Shirts', subs: ['Silk Blouses', 'Formal Shirts'] },
+                      { name: 'Blazers & Outerwear', subs: ['Tailored Blazers', 'Trench Coats'] },
+                      { name: 'Trousers & Skirts', subs: ['Wide-Leg Trousers', 'Satin Skirts'] },
+                      { name: 'Knitwear & Cashmere', subs: ['Cashmere Sweaters', 'Cardigans'] },
+                      { name: 'Co-ord Sets & Suits', subs: ['Tweed Sets', 'Power Suits'] },
+                      { name: 'Luxury Loungewear & Robes', subs: ['Silk Robes', 'Pajama Sets'] }
+                    ]
+                  : [
+                      { name: 'Shirts', subs: ['Formal Shirts', 'Casual Shirts', 'Party Wear'] },
+                      { name: 'T-Shirts', subs: ['Polo', 'Solid'] },
+                      { name: 'Blazers & Suits', subs: ['Formal Blazers', 'Casual Blazers'] },
+                      { name: 'Dresses', subs: ['Evening Gowns', 'Midi Dresses', 'Blazer Dresses'] },
+                      { name: 'Tops & Shirts', subs: ['Silk Blouses', 'Formal Shirts'] },
+                      { name: 'Trousers & Chinos', subs: ['Formal Trousers', 'Chinos'] },
+                      { name: 'Jeans', subs: ['Selvedge', 'Slim Fit'] },
+                      { name: 'Knitwear', subs: ['Cashmere Knitwear'] },
+                      { name: 'Knitwear & Cashmere', subs: ['Cashmere Sweaters'] },
+                      { name: 'Co-ord Sets & Suits', subs: ['Tweed Sets'] },
+                      { name: 'Luxury Loungewear & Robes', subs: ['Silk Robes'] }
+                    ]
+                ).map((catObj) => (
+                  <div key={catObj.name} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <button
+                      onClick={() => {
+                        updateFilter('category', catObj.name);
+                        updateFilter('subcategory', null);
+                      }}
+                      style={{
+                        textAlign: 'left',
+                        color: categoryParam === catObj.name ? 'var(--accent-gold-hover)' : 'var(--text-primary)',
+                        fontWeight: categoryParam === catObj.name ? '700' : '500',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <span>{catObj.name}</span>
+                      {categoryParam === catObj.name && <span style={{ fontSize: '0.7rem', color: 'var(--accent-gold)' }}>●</span>}
+                    </button>
+                    {/* Render Subcategories if Category is selected */}
+                    {categoryParam === catObj.name && catObj.subs && (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', paddingLeft: '12px', borderLeft: '2px solid var(--accent-gold-light)' }}>
+                        {catObj.subs.map((sub) => (
+                          <button
+                            key={sub}
+                            onClick={() => updateFilter('subcategory', sub)}
+                            style={{
+                              textAlign: 'left',
+                              fontSize: '0.8rem',
+                              color: subcategoryParam === sub ? 'var(--accent-gold-hover)' : 'var(--text-secondary)',
+                              fontWeight: subcategoryParam === sub ? '700' : '400',
+                              padding: '2px 0'
+                            }}
+                          >
+                            {subcategoryParam === sub ? '▸ ' : ''}{sub}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>

@@ -20,7 +20,7 @@ const MegaMenu = ({ activeMenu, onClose }) => {
       title: 'Suits & Tailoring',
       items: [
         { name: 'Italian Wool Blazers', path: '/men?category=Blazers+%26+Suits&subcategory=Formal+Blazers' },
-        { name: 'Double-Breasted Jackets', path: '/men?category=Blazers+%26+Suits' },
+        { name: 'Double-Breasted Jackets', path: '/men?category=Blazers+%26+Suits&subcategory=Double-Breasted' },
         { name: 'Pleated Gurkha Trousers', path: '/men?category=Trousers+%26+Chinos&subcategory=Formal+Trousers' },
         { name: 'Tailored Chinos', path: '/men?category=Trousers+%26+Chinos&subcategory=Chinos' }
       ]
@@ -28,9 +28,9 @@ const MegaMenu = ({ activeMenu, onClose }) => {
     {
       title: 'Denim & Casuals',
       items: [
-        { name: 'Japanese Selvedge Denim', path: '/men?category=Jeans' },
+        { name: 'Japanese Selvedge Denim', path: '/men?category=Jeans&subcategory=Selvedge' },
         { name: 'Slim Tapered Jeans', path: '/men?category=Jeans&subcategory=Slim+Fit' },
-        { name: 'Cashmere Knitwear', path: '/men?category=Sweatshirts' },
+        { name: 'Cashmere Knitwear', path: '/men?category=Knitwear&subcategory=Cashmere+Knitwear' },
         { name: 'View All Men\'s Collection', path: '/men', isHighlight: true }
       ]
     }

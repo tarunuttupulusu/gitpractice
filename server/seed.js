@@ -152,7 +152,9 @@ const categoriesData = [
 ];
 
 const productsData = [
-  // MEN PRODUCTS
+  // =========================================================================
+  // 1. MEN: SHIRTS & TOPS - FORMAL SHIRTS
+  // =========================================================================
   {
     name: 'Milano Royal Oxford Formal Shirt',
     slug: 'milano-royal-oxford-formal-shirt',
@@ -194,6 +196,122 @@ const productsData = [
     isBestSeller: true
   },
   {
+    name: 'Florentine Fine Twill Spread-Collar Shirt',
+    slug: 'florentine-fine-twill-spread-collar-shirt',
+    brand: 'VALENTI',
+    description: 'A masterpiece of Italian shirting. Tailored from 120s compact diagonal twill with exceptional wrinkle resistance, a generous Italian spread collar, and hand-turned single-needle stitching.',
+    category: 'Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'men',
+    price: 3699,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1589310243389-96a5483213a8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=1000&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pale French Blue', hex: '#C6D9E8', inStock: true },
+      { name: 'Classic White', hex: '#FFFFFF', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 14 },
+      { size: '40', stock: 20 },
+      { size: '42', stock: 16 },
+      { size: '44', stock: 10 }
+    ],
+    material: '100% Extra-Long Staple Italian Cotton Twill',
+    careInstructions: 'Machine wash 40°C. Steam iron.',
+    specifications: [
+      { key: 'Fit', value: 'Slim Sartorial Silhouette' },
+      { key: 'Collar', value: 'Full Italian Spread Collar' },
+      { key: 'Placket', value: 'Clean Seamless French Front' }
+    ],
+    rating: 4.8,
+    reviewCount: 31,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Venetian French-Cuff Tuxedo Shirt',
+    slug: 'venetian-french-cuff-tuxedo-shirt',
+    brand: 'VALENTI',
+    description: 'Black tie perfection. Features a classic pleated marcella bib front, removable stud fasteners, and double French cuffs designed for bespoke cufflinks.',
+    category: 'Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'men',
+    price: 4599,
+    salePrice: 3899,
+    images: [
+      'https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?w=1000&q=80',
+      'https://images.unsplash.com/photo-1620012253295-c15c429f66bf?w=1000&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure Alabaster', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 8 },
+      { size: '40', stock: 15 },
+      { size: '42', stock: 12 },
+      { size: '44', stock: 6 }
+    ],
+    material: '100% Giza 45 Marcella Pique & Poplin Body',
+    careInstructions: 'Dry clean or delicate wash. Starch collar and bib.',
+    specifications: [
+      { key: 'Collar', value: 'Formal Wing / Turn-Down Hybrid' },
+      { key: 'Cuffs', value: 'Double French Cuffs' },
+      { key: 'Bib', value: 'Hand-Pleated Marcella' }
+    ],
+    rating: 5.0,
+    reviewCount: 18,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Savile Row Fine Bengal Stripe Shirt',
+    slug: 'savile-row-fine-bengal-stripe-shirt',
+    brand: 'VALENTI',
+    description: 'Classic British sartorial heritage. Navy and white alternating fine Bengal stripes woven on high-density looms with contrasting white semi-spread collar and cuffs.',
+    category: 'Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'men',
+    price: 3799,
+    salePrice: 3199,
+    images: [
+      'https://images.unsplash.com/photo-1563630423918-b58f07336ac9?w=1000&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1000&q=80',
+      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Navy & White Stripe', hex: '#1E3A8A', inStock: true },
+      { name: 'Bordeaux & White Stripe', hex: '#881337', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 10 },
+      { size: '40', stock: 16 },
+      { size: '42', stock: 14 },
+      { size: '44', stock: 7 }
+    ],
+    material: '100% 2-Ply Long Staple Egyptian Cotton',
+    careInstructions: 'Machine wash warm. Medium iron.',
+    specifications: [
+      { key: 'Pattern', value: 'Yarn-Dyed 2mm Bengal Stripe' },
+      { key: 'Collar', value: 'White Contrast Semi-Cutaway' }
+    ],
+    rating: 4.8,
+    reviewCount: 22,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+
+  // =========================================================================
+  // 2. MEN: SHIRTS & TOPS - CASUAL LINEN SHIRTS
+  // =========================================================================
+  {
     name: 'Sartorial Linen Band-Collar Shirt',
     slug: 'sartorial-linen-band-collar-shirt',
     brand: 'VALENTI',
@@ -205,7 +323,8 @@ const productsData = [
     salePrice: null,
     images: [
       'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=1000&q=80',
-      'https://images.unsplash.com/photo-1603252109303-2751441dd157?w=1000&q=80'
+      'https://images.unsplash.com/photo-1603252109303-2751441dd157?w=1000&q=80',
+      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1000&q=80'
     ],
     colors: [
       { name: 'Raw Sand', hex: '#D2B48C', inStock: true },
@@ -232,6 +351,391 @@ const productsData = [
     isBestSeller: false
   },
   {
+    name: 'Saint-Tropez Camp-Collar Resort Shirt',
+    slug: 'saint-tropez-camp-collar-resort-shirt',
+    brand: 'VALENTI',
+    description: 'Inspired by the French Riviera. A breezy cuban-collar short sleeve shirt tailored in lightweight textured slub linen, perfect for warm Mediterranean days.',
+    category: 'Shirts',
+    subcategory: 'Casual Shirts',
+    gender: 'men',
+    price: 3299,
+    salePrice: 2699,
+    images: [
+      'https://images.unsplash.com/photo-1508296695146-257a814070b4?w=1000&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=1000&q=80',
+      'https://images.unsplash.com/photo-1603252109303-2751441dd157?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Terracotta Rust', hex: '#C85A32', inStock: true },
+      { name: 'Mediterranean Azure', hex: '#2B6CB0', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 12 },
+      { size: '40', stock: 18 },
+      { size: '42', stock: 15 },
+      { size: '44', stock: 8 }
+    ],
+    material: '100% Garment-Washed Pure Linen (155 GSM)',
+    careInstructions: 'Machine wash cold. Do not bleach. Line dry in shade.',
+    specifications: [
+      { key: 'Collar', value: 'Cuban Open Camp Collar' },
+      { key: 'Hem', value: 'Straight Hem with Side Vents' }
+    ],
+    rating: 4.9,
+    reviewCount: 25,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Amalfi Coast Garment-Dyed Chambray Shirt',
+    slug: 'amalfi-coast-garment-dyed-chambray-shirt',
+    brand: 'VALENTI',
+    description: 'Spun from Japanese organic cotton-linen chambray. Each piece is artisanal garment-dyed in small batches for a lived-in depth of color.',
+    category: 'Shirts',
+    subcategory: 'Casual Shirts',
+    gender: 'men',
+    price: 3799,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1603252109303-2751441dd157?w=1000&q=80',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=1000&q=80',
+      'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Washed Indigo', hex: '#3B5998', inStock: true },
+      { name: 'Dusty Moss', hex: '#4A5D4E', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 9 },
+      { size: '40', stock: 15 },
+      { size: '42', stock: 11 },
+      { size: '44', stock: 5 }
+    ],
+    material: '60% Organic Cotton, 40% Normandy Flax Linen',
+    careInstructions: 'Machine wash gentle cycle cold.',
+    specifications: [
+      { key: 'Buttons', value: 'Real Corozo Nut Buttons' },
+      { key: 'Fit', value: 'Modern Tailored Casual' }
+    ],
+    rating: 4.7,
+    reviewCount: 19,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+
+  // =========================================================================
+  // 3. MEN: SHIRTS & TOPS - EVENING & PARTY WEAR
+  // =========================================================================
+  {
+    name: 'Obsidian Pure Silk Jacquard Evening Shirt',
+    slug: 'obsidian-pure-silk-jacquard-evening-shirt',
+    brand: 'VALENTI',
+    description: 'Designed for VIP gala evenings. Tailored from 100% 19-momme mulberry silk with an intricate tonal micro-geometric jacquard weave and hidden placket.',
+    category: 'Shirts',
+    subcategory: 'Party Wear',
+    gender: 'men',
+    price: 5499,
+    salePrice: 4499,
+    images: [
+      'https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=1000&q=80',
+      'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=1000&q=80',
+      'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Obsidian Noir', hex: '#0A0B0D', inStock: true },
+      { name: 'Imperial Emerald', hex: '#0B3B2B', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 8 },
+      { size: '40', stock: 14 },
+      { size: '42', stock: 12 },
+      { size: '44', stock: 6 }
+    ],
+    material: '100% Pure Mulberry Silk Jacquard (19 Momme)',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Placket', value: 'Concealed Fly Front' },
+      { key: 'Collar', value: 'Structured Milano Evening Collar' }
+    ],
+    rating: 5.0,
+    reviewCount: 26,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Midnight Satin Cocktail Dress Shirt',
+    slug: 'midnight-satin-cocktail-dress-shirt',
+    brand: 'VALENTI',
+    description: 'High-sheen cotton-silk satin weave offering a fluid silhouette and liquid luster under low ambient evening lights.',
+    category: 'Shirts',
+    subcategory: 'Party Wear',
+    gender: 'men',
+    price: 4299,
+    salePrice: 3499,
+    images: [
+      'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=1000&q=80',
+      'https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=1000&q=80',
+      'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Midnight Navy', hex: '#111827', inStock: true },
+      { name: 'Deep Burgundy', hex: '#4A0E17', inStock: true }
+    ],
+    sizes: [
+      { size: '38', stock: 10 },
+      { size: '40', stock: 15 },
+      { size: '42', stock: 12 },
+      { size: '44', stock: 7 }
+    ],
+    material: '70% Egyptian Cotton, 30% Mulberry Silk',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Weave', value: 'High Density Silk Satin' },
+      { key: 'Cuffs', value: 'Angled Single-Button Cuffs' }
+    ],
+    rating: 4.9,
+    reviewCount: 20,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 4. MEN: T-SHIRTS & TOPS - AUTHENTIC H&M POLOS, TEES, GRAPHICS & VESTS
+  // =========================================================================
+  {
+    name: 'H&M Regular Fit Cotton Pique Polo Shirt',
+    slug: 'hm-regular-fit-cotton-pique-polo-shirt',
+    brand: 'H&M',
+    description: 'Polo shirt in cotton pique with a ribbed collar, button placket, short sleeves with ribbed trims, and straight-cut hem with small side slits.',
+    category: 'T-Shirts',
+    subcategory: 'Polo',
+    gender: 'men',
+    price: 1499,
+    salePrice: 1199,
+    images: [
+      '/hm_images/imgi_160_b13162f9f0c830f26f6810f21abfb820a2d8a45d.jpg',
+      '/hm_images/imgi_218_63bafc753c06bc078da58a0bdcb5568649300d3f.jpg',
+      '/hm_images/imgi_172_f4134b2a3f502b43952d4470622b17fd1ccbaf60.jpg'
+    ],
+    colors: [
+      { name: 'Dark Sage Green', hex: '#4A5D4E', inStock: true },
+      { name: 'Classic Navy', hex: '#1C2E4A', inStock: true },
+      { name: 'Pure White', hex: '#FFFFFF', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 18 },
+      { size: 'M', stock: 30 },
+      { size: 'L', stock: 25 },
+      { size: 'XL', stock: 14 }
+    ],
+    material: '100% Breathable Cotton Pique (210 GSM)',
+    careInstructions: 'Machine wash 40°C. Medium iron.',
+    specifications: [
+      { key: 'Fit', value: 'Regular Fit' },
+      { key: 'Collar', value: 'Ribbed Knit Spread Collar' },
+      { key: 'Placket', value: 'Classic 2-Button Front' }
+    ],
+    rating: 4.8,
+    reviewCount: 42,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Relaxed Fit Open-Collar Textured Resort Polo',
+    slug: 'hm-relaxed-fit-open-collar-textured-resort-polo',
+    brand: 'H&M',
+    description: 'Resort polo in soft, textured waffle-knit cotton blend. Features a buttonless open collar, relaxed dropped shoulders, and straight hem.',
+    category: 'T-Shirts',
+    subcategory: 'Polo',
+    gender: 'men',
+    price: 1999,
+    salePrice: 1499,
+    images: [
+      '/hm_images/imgi_218_63bafc753c06bc078da58a0bdcb5568649300d3f.jpg',
+      '/hm_images/imgi_160_b13162f9f0c830f26f6810f21abfb820a2d8a45d.jpg',
+      '/hm_images/imgi_178_2753022983cb076e9fabb7502d888ef0a0a1aac5.jpg'
+    ],
+    colors: [
+      { name: 'Oatmeal Melange', hex: '#D7D2C8', inStock: true },
+      { name: 'Terracotta Brown', hex: '#8B4513', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 22 },
+      { size: 'L', stock: 18 },
+      { size: 'XL', stock: 9 }
+    ],
+    material: '80% Cotton, 20% Polyester Waffle Knit',
+    careInstructions: 'Machine wash warm. Reshape flat.',
+    specifications: [
+      { key: 'Collar', value: 'Buttonless Camp / Johnny Collar' },
+      { key: 'Texture', value: 'Waffle Knit Pique' }
+    ],
+    rating: 4.9,
+    reviewCount: 35,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Regular Fit Round-Neck Solid T-Shirt',
+    slug: 'hm-regular-fit-round-neck-solid-t-shirt',
+    brand: 'H&M',
+    description: 'Classic T-shirt in soft cotton jersey with a ribbed crew neck and straight-cut hem. An everyday staple built for long-lasting comfort.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 799,
+    salePrice: null,
+    images: [
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg',
+      '/hm_images/imgi_180_5bd8ea82ab6f4eb7a28023ede84a703bd5b15c19.jpg',
+      '/hm_images/imgi_120_e3221b52392aac6227101891acffd665f122bba5.jpg'
+    ],
+    colors: [
+      { name: 'Optic White', hex: '#FFFFFF', inStock: true },
+      { name: 'Washed Black', hex: '#1E1E1E', inStock: true },
+      { name: 'Heather Grey', hex: '#B0B0B0', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 25 },
+      { size: 'M', stock: 40 },
+      { size: 'L', stock: 35 },
+      { size: 'XL', stock: 20 }
+    ],
+    material: '100% BCI Certified Soft Cotton Jersey',
+    careInstructions: 'Machine wash 40°C. Tumble dry medium.',
+    specifications: [
+      { key: 'Neckline', value: 'Ribbed Crewneck' },
+      { key: 'Weight', value: '180 GSM Everyday Jersey' }
+    ],
+    rating: 4.8,
+    reviewCount: 65,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Relaxed Fit Heavyweight Graphic T-Shirt',
+    slug: 'hm-relaxed-fit-heavyweight-graphic-t-shirt',
+    brand: 'H&M',
+    description: 'Oversized T-shirt in heavyweight 240 GSM cotton jersey with bold front and back streetwear graphic typography prints and dropped shoulders.',
+    category: 'T-Shirts',
+    subcategory: 'Graphics',
+    gender: 'men',
+    price: 1299,
+    salePrice: 999,
+    images: [
+      '/hm_images/imgi_114_ec7bd80bd8cd044fce7b41368554e543c92b94fd.jpg',
+      '/hm_images/imgi_190_694baff7688600431d5b15cbb3f029c1aee38f08.jpg',
+      '/hm_images/imgi_253_f7e22aff477951526d0dd1dd7a402e2eedeaad7c.jpg'
+    ],
+    colors: [
+      { name: 'Vintage Washed Black', hex: '#262626', inStock: true },
+      { name: 'Chalk White', hex: '#F5F5F0', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 28 },
+      { size: 'L', stock: 24 },
+      { size: 'XL', stock: 12 }
+    ],
+    material: '100% Heavyweight Cotton (240 GSM)',
+    careInstructions: 'Wash cold inside-out to preserve graphic prints.',
+    specifications: [
+      { key: 'Fit', value: 'Relaxed Oversized Fit' },
+      { key: 'Print', value: 'High Density Screen Print' }
+    ],
+    rating: 4.9,
+    reviewCount: 38,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Loose Fit Vintage Washed Pocket Tee',
+    slug: 'hm-loose-fit-vintage-washed-pocket-tee',
+    brand: 'H&M',
+    description: 'Loose-fit T-shirt in acid-washed cotton jersey with an open chest patch pocket, wider sleeves, and a vintage faded look.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 1199,
+    salePrice: 899,
+    images: [
+      '/hm_images/imgi_190_694baff7688600431d5b15cbb3f029c1aee38f08.jpg',
+      '/hm_images/imgi_233_7bf47ec3eaa30e1f1e02ccc8b69a7e76ded0f4b1.jpg',
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg'
+    ],
+    colors: [
+      { name: 'Faded Charcoal', hex: '#333333', inStock: true },
+      { name: 'Washed Olive', hex: '#556B2F', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 22 },
+      { size: 'L', stock: 19 },
+      { size: 'XL', stock: 10 }
+    ],
+    material: '100% Acid-Washed Cotton Jersey',
+    careInstructions: 'Machine wash 30°C.',
+    specifications: [
+      { key: 'Pocket', value: 'Single Chest Patch Pocket' },
+      { key: 'Fit', value: 'Loose Boxy Fit' }
+    ],
+    rating: 4.7,
+    reviewCount: 29,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'H&M Slim Fit Ribbed Cotton Tank Top Vest',
+    slug: 'hm-slim-fit-ribbed-cotton-tank-top-vest',
+    brand: 'H&M',
+    description: 'Fitted vest top in ribbed 2x2 stretch cotton jersey with a scoop neckline and deep armholes. Ideal for summer layering under overshirts.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 699,
+    salePrice: 499,
+    images: [
+      '/hm_images/imgi_180_5bd8ea82ab6f4eb7a28023ede84a703bd5b15c19.jpg',
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg',
+      '/hm_images/imgi_154_b54872319bf5ee4c59cc8490503f7e14c79672dd.jpg'
+    ],
+    colors: [
+      { name: 'Pure White', hex: '#FFFFFF', inStock: true },
+      { name: 'Jet Black', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 20 },
+      { size: 'M', stock: 35 },
+      { size: 'L', stock: 28 },
+      { size: 'XL', stock: 15 }
+    ],
+    material: '95% Cotton, 5% Elastane Ribbed Knit',
+    careInstructions: 'Machine wash warm.',
+    specifications: [
+      { key: 'Neckline', value: 'Deep Scoop Neck' },
+      { key: 'Rib', value: '2x2 Stretch Rib Knit' }
+    ],
+    rating: 4.8,
+    reviewCount: 51,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 5. MEN: SUITS & TAILORING - BLAZERS & SUITS
+  // =========================================================================
+  {
     name: 'Merino Wool Double-Breasted Blazer',
     slug: 'merino-wool-double-breasted-blazer',
     brand: 'VALENTI',
@@ -243,7 +747,8 @@ const productsData = [
     salePrice: 12499,
     images: [
       'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1000&q=80',
-      'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=1000&q=80'
+      'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=1000&q=80',
+      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1000&q=80'
     ],
     colors: [
       { name: 'Obsidian Black', hex: '#0B0B0C', inStock: true },
@@ -269,42 +774,118 @@ const productsData = [
     isBestSeller: true
   },
   {
-    name: 'Supima Silk-Touch Pique Polo',
-    slug: 'supima-silk-touch-pique-polo',
+    name: 'Napoli Super 150s Hopsack Navy Blazer',
+    slug: 'napoli-super-150s-hopsack-navy-blazer',
     brand: 'VALENTI',
-    description: 'Double-mercerized long-staple Supima cotton gives this polo a liquid silk luster, resilient structure, and non-curling knit collar.',
-    category: 'T-Shirts',
-    subcategory: 'Polo',
+    description: 'The quintessential sartorial jacket. Woven in an open hopsack weave for year-round breathability, finished with patch pockets, natural Neapolitan shoulders, and mother of pearl buttons.',
+    category: 'Blazers & Suits',
+    subcategory: 'Formal Blazers',
     gender: 'men',
-    price: 2499,
-    salePrice: 1999,
+    price: 16499,
+    salePrice: 13999,
     images: [
-      'https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=1000&q=80',
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000&q=80'
+      'https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=1000&q=80',
+      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1000&q=80',
+      'https://images.unsplash.com/photo-1555069519-127aadedf1ee?w=1000&q=80'
     ],
     colors: [
-      { name: 'Forest Emerald', hex: '#1C3F3A', inStock: true },
-      { name: 'Burgundy Wine', hex: '#58111A', inStock: true },
-      { name: 'Jet Black', hex: '#101010', inStock: true }
+      { name: 'Royal Navy', hex: '#1B2A4A', inStock: true }
     ],
     sizes: [
-      { size: 'S', stock: 15 },
-      { size: 'M', stock: 25 },
-      { size: 'L', stock: 20 },
-      { size: 'XL', stock: 12 }
+      { size: '38R', stock: 8 },
+      { size: '40R', stock: 12 },
+      { size: '42R', stock: 10 },
+      { size: '44R', stock: 5 }
     ],
-    material: '100% American Supima Cotton (Double Mercerized)',
-    careInstructions: 'Machine wash cold. Reshape and dry flat.',
+    material: '100% Super 150s Vitale Barberis Canonico Wool',
+    careInstructions: 'Dry clean only.',
     specifications: [
-      { key: 'Placket', value: 'Hidden 3-Button Placket' },
-      { key: 'Weight', value: '220 GSM Dense Pique' }
+      { key: 'Shoulder', value: 'Spalla Camicia Neapolitan Shirring' },
+      { key: 'Pockets', value: 'Curved Barchetta Chest & Patch Pockets' }
     ],
-    rating: 4.8,
-    reviewCount: 35,
-    isFeatured: false,
+    rating: 4.9,
+    reviewCount: 32,
+    isFeatured: true,
     isNewArrival: true,
     isBestSeller: true
   },
+  {
+    name: 'Florentine Unstructured Silk-Linen Blazer',
+    slug: 'florentine-unstructured-silk-linen-blazer',
+    brand: 'VALENTI',
+    description: 'Featherlight summer luxury. Free from heavy shoulder padding and internal canvas, tailored from an opulent blend of raw tussar silk and Irish linen.',
+    category: 'Blazers & Suits',
+    subcategory: 'Casual Blazers',
+    gender: 'men',
+    price: 13499,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1555069519-127aadedf1ee?w=1000&q=80',
+      'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=1000&q=80',
+      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Tuscan Tan', hex: '#A88B6E', inStock: true },
+      { name: 'Cream Alabaster', hex: '#F5F5DC', inStock: true }
+    ],
+    sizes: [
+      { size: '38R', stock: 6 },
+      { size: '40R', stock: 10 },
+      { size: '42R', stock: 8 },
+      { size: '44R', stock: 4 }
+    ],
+    material: '55% Irish Linen, 45% Raw Mulberry Silk',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Structure', value: 'Completely Unlined & Deconstructed' },
+      { key: 'Buttons', value: 'Hand-Polished Horn Buttons' }
+    ],
+    rating: 4.8,
+    reviewCount: 15,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Double-Breasted Camel Hair Power Jacket',
+    slug: 'double-breasted-camel-hair-power-jacket',
+    brand: 'VALENTI',
+    description: 'Woven from pure baby camel hair from Inner Mongolia, offering an extraordinarily soft thermal touch, 6x2 button stance, and hand-rolled lapels.',
+    category: 'Blazers & Suits',
+    subcategory: 'Double-Breasted',
+    gender: 'men',
+    price: 18999,
+    salePrice: 15999,
+    images: [
+      'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=1000&q=80',
+      'https://images.unsplash.com/photo-1548883354-7622d03aca27?w=1000&q=80',
+      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Rich Camel', hex: '#C19A6B', inStock: true }
+    ],
+    sizes: [
+      { size: '38R', stock: 4 },
+      { size: '40R', stock: 8 },
+      { size: '42R', stock: 6 },
+      { size: '44R', stock: 3 }
+    ],
+    material: '100% Pure Mongolian Baby Camel Hair',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Stance', value: 'Classic 6-on-2 Double-Breasted' },
+      { key: 'Vents', value: 'Double Side Vents' }
+    ],
+    rating: 5.0,
+    reviewCount: 12,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 6. MEN: SUITS & TAILORING - TROUSERS & CHINOS
+  // =========================================================================
   {
     name: 'Gurkha Pleated Flannel Trousers',
     slug: 'gurkha-pleated-flannel-trousers',
@@ -317,7 +898,8 @@ const productsData = [
     salePrice: 3999,
     images: [
       'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=1000&q=80',
-      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=1000&q=80'
+      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=1000&q=80'
     ],
     colors: [
       { name: 'Taupe Grey', hex: '#8B8589', inStock: true },
@@ -342,18 +924,98 @@ const productsData = [
     isBestSeller: false
   },
   {
+    name: 'Sartorial Double-Pleat Wide Leg Trousers',
+    slug: 'sartorial-double-pleat-wide-leg-trousers',
+    brand: 'VALENTI',
+    description: 'High-rise silhouette with deep forward pleats, side adjusters, and a relaxed taper tailored in Italian tropical fresco wool.',
+    category: 'Trousers & Chinos',
+    subcategory: 'Formal Trousers',
+    gender: 'men',
+    price: 5299,
+    salePrice: 4299,
+    images: [
+      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=1000&q=80',
+      'https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Flint Charcoal', hex: '#2A2D34', inStock: true },
+      { name: 'Sand Khaki', hex: '#C3B091', inStock: true }
+    ],
+    sizes: [
+      { size: '30', stock: 10 },
+      { size: '32', stock: 18 },
+      { size: '34', stock: 15 },
+      { size: '36', stock: 8 }
+    ],
+    material: '100% High-Twist Fresco Wool (280 GSM)',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Rise', value: 'High Sartorial Rise' },
+      { key: 'Waistband', value: 'Clean Extended Tab with Side Buckles' }
+    ],
+    rating: 4.8,
+    reviewCount: 22,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Supima Cotton Tailored Stretch Chinos',
+    slug: 'supima-cotton-tailored-stretch-chinos',
+    brand: 'VALENTI',
+    description: 'Refined casual versatility. Tailored from silky American Supima cotton with 2% elastane for subtle flex, pick-stitched fly, and horn buttons.',
+    category: 'Trousers & Chinos',
+    subcategory: 'Chinos',
+    gender: 'men',
+    price: 3499,
+    salePrice: 2899,
+    images: [
+      'https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=1000&q=80',
+      'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'British Khaki', hex: '#BDB76B', inStock: true },
+      { name: 'Olive Green', hex: '#556B2F', inStock: true },
+      { name: 'Navy Blue', hex: '#1B263B', inStock: true }
+    ],
+    sizes: [
+      { size: '30', stock: 12 },
+      { size: '32', stock: 24 },
+      { size: '34', stock: 20 },
+      { size: '36', stock: 10 }
+    ],
+    material: '98% Supima Cotton, 2% Lycra Elastane',
+    careInstructions: 'Machine wash cold inside-out. Medium iron.',
+    specifications: [
+      { key: 'Fit', value: 'Slim Tapered Leg' },
+      { key: 'Finish', value: 'Brushed Peach Satin Finish' }
+    ],
+    rating: 4.9,
+    reviewCount: 40,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 7. MEN: DENIM & CASUALS - JEANS & DENIM
+  // =========================================================================
+  {
     name: 'Selvedge Raw Kurabo Denim Jeans',
     slug: 'selvedge-raw-kurabo-denim-jeans',
     brand: 'VALENTI',
-    description: '14oz Japanese red-line selvedge denim woven on vintage shuttle looms in Okayama. Pure indigo rope-dyed with custom embossed copper rivets.',
+    description: '14.5oz Japanese red-line selvedge denim woven on vintage Toyoda shuttle looms in Okayama. Pure indigo rope-dyed with custom embossed copper rivets.',
     category: 'Jeans',
-    subcategory: 'Slim Fit',
+    subcategory: 'Selvedge',
     gender: 'men',
     price: 5999,
     salePrice: null,
     images: [
       'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1000&q=80',
-      'https://images.unsplash.com/photo-1542272604-780c96856592?w=1000&q=80'
+      'https://images.unsplash.com/photo-1542272604-780c96856592?w=1000&q=80',
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=1000&q=80'
     ],
     colors: [
       { name: 'Deep Indigo', hex: '#1A2A44', inStock: true }
@@ -372,10 +1034,199 @@ const productsData = [
     ],
     rating: 4.9,
     reviewCount: 31,
-    isFeatured: false,
+    isFeatured: true,
     isNewArrival: false,
     isBestSeller: true
   },
+  {
+    name: 'Okayama 15oz Vintage Washed Selvedge Jeans',
+    slug: 'okayama-15oz-vintage-washed-selvedge-jeans',
+    brand: 'VALENTI',
+    description: 'Hand-distressed by master artisans in Kojima with authentic honeycomb whiskers, roped hems, and chain-stitched construction.',
+    category: 'Jeans',
+    subcategory: 'Slim Fit',
+    gender: 'men',
+    price: 6499,
+    salePrice: 5299,
+    images: [
+      'https://images.unsplash.com/photo-1542272604-780c96856592?w=1000&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1000&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Vintage Sun-Bleach Indigo', hex: '#4682B4', inStock: true }
+    ],
+    sizes: [
+      { size: '30', stock: 8 },
+      { size: '32', stock: 15 },
+      { size: '34', stock: 12 },
+      { size: '36', stock: 6 }
+    ],
+    material: '100% Japanese Selvedge Cotton (15 oz)',
+    careInstructions: 'Wash cold inside out. Hang dry.',
+    specifications: [
+      { key: 'Wash', value: '3-Year Natural Artisan Fade' },
+      { key: 'Hardware', value: 'Solid Cast Iron Donut Buttons' }
+    ],
+    rating: 4.9,
+    reviewCount: 27,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Black Coated Minimalist Skinny-Slim Denim',
+    slug: 'black-coated-minimalist-skinny-slim-denim',
+    brand: 'VALENTI',
+    description: 'Wax-coated jet black denim with a subtle leather-like satin sheen. Tailored with clean minimal hardware for sleek evening styling.',
+    category: 'Jeans',
+    subcategory: 'Slim Fit',
+    gender: 'men',
+    price: 5499,
+    salePrice: 4399,
+    images: [
+      'https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=1000&q=80',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1000&q=80',
+      'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Waxed Noir', hex: '#0D0D0D', inStock: true }
+    ],
+    sizes: [
+      { size: '30', stock: 9 },
+      { size: '32', stock: 16 },
+      { size: '34', stock: 14 },
+      { size: '36', stock: 7 }
+    ],
+    material: '98% Cotton, 2% Polyurethane Resinated Coating',
+    careInstructions: 'Cold hand wash only to preserve wax finish.',
+    specifications: [
+      { key: 'Finish', value: 'Semi-Matte Wax Coating' },
+      { key: 'Fit', value: 'Sleek Tapered Leg' }
+    ],
+    rating: 4.8,
+    reviewCount: 18,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+
+  // =========================================================================
+  // 8. MEN: DENIM & CASUALS - CASHMERE KNITWEAR
+  // =========================================================================
+  {
+    name: 'Mongolian Pure Cashmere Crewneck Sweater',
+    slug: 'mongolian-pure-cashmere-crewneck-sweater',
+    brand: 'VALENTI',
+    description: 'Spun from Grade-A 2-ply 100% Mongolian cashmere (15.2 micron fineness), providing sublime cloud-like lightness and supreme warmth.',
+    category: 'Knitwear',
+    subcategory: 'Cashmere Knitwear',
+    gender: 'men',
+    price: 9999,
+    salePrice: 7999,
+    images: [
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1000&q=80',
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1614975058789-41316d0e2e98?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Oatmeal Cashmere', hex: '#E3DAC9', inStock: true },
+      { name: 'Midnight Charcoal', hex: '#232B2B', inStock: true },
+      { name: 'Forest Green', hex: '#1C3F3A', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 6 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 10 },
+      { size: 'XL', stock: 5 }
+    ],
+    material: '100% Grade-A Mongolian Cashmere (15.2 Micron, 2-Ply)',
+    careInstructions: 'Hand wash with wool shampoo in cold water or dry clean.',
+    specifications: [
+      { key: 'Gauge', value: '12-Gauge Seamless Knit' },
+      { key: 'Trim', value: '2x2 Ribbed Hem and Cuffs' }
+    ],
+    rating: 5.0,
+    reviewCount: 36,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Ribbed Extra-Fine Merino Wool Turtleneck',
+    slug: 'ribbed-extra-fine-merino-wool-turtleneck',
+    brand: 'VALENTI',
+    description: 'Essential layering for winter tailoring. Spun from 19.5-micron Italian merino wool with a refined roll-neck and snug thermal fit.',
+    category: 'Knitwear',
+    subcategory: 'Cashmere Knitwear',
+    gender: 'men',
+    price: 6499,
+    salePrice: 5199,
+    images: [
+      'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=1000&q=80',
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1000&q=80',
+      'https://images.unsplash.com/photo-1516826957135-700dedea698c?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#0B0B0C', inStock: true },
+      { name: 'Burgundy Wine', hex: '#58111A', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 15 },
+      { size: 'L', stock: 12 },
+      { size: 'XL', stock: 6 }
+    ],
+    material: '100% Biella Extra-Fine Merino Wool',
+    careInstructions: 'Dry clean or gentle hand wash cold.',
+    specifications: [
+      { key: 'Neck', value: 'Double Fold Rollneck' },
+      { key: 'Knit', value: 'Fine 14-Gauge Micro Rib' }
+    ],
+    rating: 4.9,
+    reviewCount: 21,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Milanese Cable-Knit Cashmere-Silk Cardigan',
+    slug: 'milanese-cable-knit-cashmere-silk-cardigan',
+    brand: 'VALENTI',
+    description: 'Heritage cable patterning handcrafted with genuine horn buttons, shawl collar, and patch pockets in a lush 70/30 cashmere-silk blend.',
+    category: 'Knitwear',
+    subcategory: 'Cashmere Knitwear',
+    gender: 'men',
+    price: 11499,
+    salePrice: 9499,
+    images: [
+      'https://images.unsplash.com/photo-1614975058789-41316d0e2e98?w=1000&q=80',
+      'https://images.unsplash.com/photo-1516826957135-700dedea698c?w=1000&q=80',
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Camel Ecru', hex: '#C2A68D', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 5 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 8 },
+      { size: 'XL', stock: 4 }
+    ],
+    material: '70% Grade-A Cashmere, 30% Mulberry Silk',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Collar', value: 'Ribbed Shawl Lapel' },
+      { key: 'Buttons', value: 'Hand-Turned Water Buffalo Horn' }
+    ],
+    rating: 5.0,
+    reviewCount: 17,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
 
   // ==========================================
   // WOMEN CATEGORY 1: DRESSES (10 Products)

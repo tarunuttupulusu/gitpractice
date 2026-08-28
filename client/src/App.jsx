@@ -15,6 +15,7 @@ import ProtectedRoute from './components/common/ProtectedRoute';
 
 // Storefront Pages (Developer 1)
 import HomePage from './pages/HomePage';
+import MenStorePage from './pages/MenStorePage';
 import ProductListingPage from './pages/ProductListingPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import SearchPage from './pages/SearchPage';
@@ -55,7 +56,7 @@ function App() {
             <Routes>
               {/* Customer Storefront Routes */}
               <Route path="/" element={<StorefrontLayout><HomePage /></StorefrontLayout>} />
-              <Route path="/men" element={<StorefrontLayout><ProductListingPage defaultGender="men" /></StorefrontLayout>} />
+              <Route path="/men" element={<StorefrontLayout><MenStorePage /></StorefrontLayout>} />
               <Route path="/women" element={<StorefrontLayout><ProductListingPage defaultGender="women" /></StorefrontLayout>} />
               <Route path="/shop" element={<StorefrontLayout><ProductListingPage /></StorefrontLayout>} />
               <Route path="/new-arrivals" element={<StorefrontLayout><ProductListingPage forceNew={true} /></StorefrontLayout>} />
