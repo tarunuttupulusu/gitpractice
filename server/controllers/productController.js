@@ -32,13 +32,15 @@ export const getProducts = async (req, res) => {
     }
 
     // Category filter
-    if (category) {
-      query.category = { $regex: new RegExp(`^${category}$`, 'i') };
+    if (category && category !== 'all') {
+      const escapedCat = category.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      query.category = { $regex: new RegExp(`^${escapedCat}$`, 'i') };
     }
 
     // Subcategory filter
     if (subcategory) {
-      query.subcategory = { $regex: new RegExp(`^${subcategory}$`, 'i') };
+      const escapedSub = subcategory.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      query.subcategory = { $regex: new RegExp(`^${escapedSub}$`, 'i') };
     }
 
     // Price range
@@ -54,22 +56,34 @@ export const getProducts = async (req, res) => {
       query['sizes.size'] = { $in: sizeArr };
     }
 
-    // Color filter
+    // Color filter with synonym/token matching
     if (color) {
       const colorArr = Array.isArray(color) ? color : color.split(',');
-      query['colors.name'] = { $in: colorArr.map(c => new RegExp(c, 'i')) };
+      const colorTokens = colorArr.flatMap(c => {
+        const tokens = c.split(/[\/\s,]+/).filter(Boolean);
+        return tokens.map(t => {
+          if (/white/i.test(t)) return 'white|ivory';
+          if (/black/i.test(t)) return 'black|noir|onyx';
+          if (/navy/i.test(t)) return 'navy|blue|azure';
+          if (/gold|champagne/i.test(t)) return 'gold|champagne|baroque';
+          if (/emerald/i.test(t)) return 'emerald|green|sage|olive';
+          if (/camel|brown/i.test(t)) return 'camel|brown|bronze|sand|tan';
+          return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        });
+      });
+      query['colors.name'] = { $in: colorTokens.map(t => new RegExp(t, 'i')) };
     }
 
     // In Stock filter
     if (inStock === 'true') {
-      query.stock = { $gt: 0 };
+      query['sizes.stock'] = { $gt: 0 };
     }
 
     // Badges / Flags
     if (featured === 'true') query.isFeatured = true;
     if (newArrival === 'true') query.isNewArrival = true;
     if (bestSeller === 'true') query.isBestSeller = true;
-    if (onSale === 'true') query.isOnSale = true;
+    if (onSale === 'true') query.salePrice = { $ne: null, $gt: 0 };
 
     // Search query across name, description, category, subcategory, material
     if (search) {

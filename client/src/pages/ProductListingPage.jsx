@@ -102,7 +102,11 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
   };
 
   const clearAllFilters = () => {
-    setSearchParams({});
+    if (defaultGender) {
+      setSearchParams({ gender: defaultGender });
+    } else {
+      setSearchParams({});
+    }
     setPriceRange({ min: 0, max: 25000 });
     setCurrentPage(1);
   };
