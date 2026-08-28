@@ -130,9 +130,9 @@ const categoriesData = [
 ];
 
 const productsData = [
-  // ==========================================
-  // MEN: SHIRTS & TOPS - FORMAL SHIRTS
-  // ==========================================
+  // =========================================================================
+  // 1. MEN: SHIRTS & TOPS - FORMAL SHIRTS
+  // =========================================================================
   {
     name: 'Milano Royal Oxford Formal Shirt',
     slug: 'milano-royal-oxford-formal-shirt',
@@ -286,9 +286,9 @@ const productsData = [
     isBestSeller: false
   },
 
-  // ==========================================
-  // MEN: SHIRTS & TOPS - CASUAL LINEN SHIRTS
-  // ==========================================
+  // =========================================================================
+  // 2. MEN: SHIRTS & TOPS - CASUAL LINEN SHIRTS
+  // =========================================================================
   {
     name: 'Sartorial Linen Band-Collar Shirt',
     slug: 'sartorial-linen-band-collar-shirt',
@@ -403,9 +403,9 @@ const productsData = [
     isBestSeller: false
   },
 
-  // ==========================================
-  // MEN: SHIRTS & TOPS - EVENING & PARTY WEAR
-  // ==========================================
+  // =========================================================================
+  // 3. MEN: SHIRTS & TOPS - EVENING & PARTY WEAR
+  // =========================================================================
   {
     name: 'Obsidian Pure Silk Jacquard Evening Shirt',
     slug: 'obsidian-pure-silk-jacquard-evening-shirt',
@@ -481,9 +481,9 @@ const productsData = [
     isBestSeller: true
   },
 
-  // ==========================================
-  // MEN: T-SHIRTS - SUPIMA POLOS
-  // ==========================================
+  // =========================================================================
+  // 4. MEN: T-SHIRTS - SUPIMA POLOS & SOLID TEES
+  // =========================================================================
   {
     name: 'Supima Silk-Touch Pique Polo',
     slug: 'supima-silk-touch-pique-polo',
@@ -559,10 +559,6 @@ const productsData = [
     isNewArrival: true,
     isBestSeller: false
   },
-
-  // ==========================================
-  // MEN: T-SHIRTS - SOLID LUXURY TEES
-  // ==========================================
   {
     name: '280 GSM Heavyweight Supima Crewneck Tee',
     slug: '280-gsm-heavyweight-supima-crewneck-tee',
@@ -639,9 +635,9 @@ const productsData = [
     isBestSeller: false
   },
 
-  // ==========================================
-  // MEN: SUITS & TAILORING - BLAZERS & SUITS
-  // ==========================================
+  // =========================================================================
+  // 5. MEN: SUITS & TAILORING - BLAZERS & SUITS
+  // =========================================================================
   {
     name: 'Merino Wool Double-Breasted Blazer',
     slug: 'merino-wool-double-breasted-blazer',
@@ -790,9 +786,9 @@ const productsData = [
     isBestSeller: true
   },
 
-  // ==========================================
-  // MEN: SUITS & TAILORING - TROUSERS & CHINOS
-  // ==========================================
+  // =========================================================================
+  // 6. MEN: SUITS & TAILORING - TROUSERS & CHINOS
+  // =========================================================================
   {
     name: 'Gurkha Pleated Flannel Trousers',
     slug: 'gurkha-pleated-flannel-trousers',
@@ -906,9 +902,9 @@ const productsData = [
     isBestSeller: true
   },
 
-  // ==========================================
-  // MEN: DENIM & CASUALS - JEANS & DENIM
-  // ==========================================
+  // =========================================================================
+  // 7. MEN: DENIM & CASUALS - JEANS & DENIM
+  // =========================================================================
   {
     name: 'Selvedge Raw Kurabo Denim Jeans',
     slug: 'selvedge-raw-kurabo-denim-jeans',
@@ -1018,9 +1014,9 @@ const productsData = [
     isBestSeller: false
   },
 
-  // ==========================================
-  // MEN: DENIM & CASUALS - CASHMERE KNITWEAR
-  // ==========================================
+  // =========================================================================
+  // 8. MEN: DENIM & CASUALS - CASHMERE KNITWEAR
+  // =========================================================================
   {
     name: 'Mongolian Pure Cashmere Crewneck Sweater',
     slug: 'mongolian-pure-cashmere-crewneck-sweater',
@@ -1133,8 +1129,9 @@ const productsData = [
     isBestSeller: true
   },
 
-
-  // WOMEN PRODUCTS
+  // =========================================================================
+  // 9. WOMEN: DRESSES & GOWNS - EVENING GOWNS, SLIP & BLAZER DRESSES
+  // =========================================================================
   {
     name: 'Aurelia Mulberry Silk Maxi Gown',
     slug: 'aurelia-mulberry-silk-maxi-gown',
@@ -1185,7 +1182,8 @@ const productsData = [
     salePrice: 7299,
     images: [
       'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
-      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
     ],
     colors: [
       { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
@@ -1210,6 +1208,47 @@ const productsData = [
     isBestSeller: true
   },
   {
+    name: 'Verona Liquid Satin Midi Slip Dress',
+    slug: 'verona-liquid-satin-midi-slip-dress',
+    brand: 'VALENTI',
+    description: 'Fluid, sensuous drape with delicate spaghetti straps and a subtle side slit. Ideal for cocktail soirees or layered under a tailored wool blazer.',
+    category: 'Dresses',
+    subcategory: 'Midi Dresses',
+    gender: 'women',
+    price: 6499,
+    salePrice: 5199,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Rose', hex: '#DCAE96', inStock: true },
+      { name: 'Emerald Velvet', hex: '#0B3B2B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 10 },
+      { size: 'S', stock: 18 },
+      { size: 'M', stock: 15 },
+      { size: 'L', stock: 7 }
+    ],
+    material: '100% High-Density Liquid Silk Satin',
+    careInstructions: 'Delicate hand wash cold or dry clean.',
+    specifications: [
+      { key: 'Length', value: '120cm Midi' },
+      { key: 'Straps', value: 'Adjustable Silk Rouleau Straps' }
+    ],
+    rating: 4.9,
+    reviewCount: 41,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 10. WOMEN: TOPS & SHIRTS - SILK BLOUSES & FORMAL SHIRTS
+  // =========================================================================
+  {
     name: 'Draped Silk Crepe-de-Chine Blouse',
     slug: 'draped-silk-crepe-de-chine-blouse',
     brand: 'VALENTI',
@@ -1221,7 +1260,8 @@ const productsData = [
     salePrice: 3599,
     images: [
       'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80',
-      'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=1000&q=80'
+      'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
     ],
     colors: [
       { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
@@ -1246,6 +1286,124 @@ const productsData = [
     isBestSeller: false
   },
   {
+    name: 'Crisp Giza Poplin Structured Collar Shirt',
+    slug: 'crisp-giza-poplin-structured-collar-shirt',
+    brand: 'VALENTI',
+    description: 'Architectural shirting for women. High-density Egyptian cotton poplin with exaggerated French cuffs and mother-of-pearl buttons.',
+    category: 'Tops & Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'women',
+    price: 3899,
+    salePrice: 3199,
+    images: [
+      'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure White', hex: '#FFFFFF', inStock: true },
+      { name: 'Sky Stripe', hex: '#B0C4DE', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 12 },
+      { size: 'S', stock: 20 },
+      { size: 'M', stock: 15 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% 2-Ply Egyptian Giza Poplin Cotton',
+    careInstructions: 'Machine wash warm, warm iron.',
+    specifications: [
+      { key: 'Fit', value: 'Clean Structured Oversized Fit' },
+      { key: 'Collar', value: 'Sharp Point Collar' }
+    ],
+    rating: 4.9,
+    reviewCount: 28,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 11. WOMEN: BLAZERS & OUTERWEAR - TAILORED BLAZERS & TRENCH COATS
+  // =========================================================================
+  {
+    name: 'Cashmere-Blend Belted Trench Coat',
+    slug: 'cashmere-blend-belted-trench-coat',
+    brand: 'VALENTI',
+    description: 'The definitive transitional outer layer. Cut from water-repellent dense wool and cashmere gabardine with storm flaps, epaulettes, and horn belt buckle.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 18999,
+    salePrice: 15999,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Camel', hex: '#B8860B', inStock: true },
+      { name: 'Midnight Blue', hex: '#191970', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 5 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '80% Italian Wool, 20% Cashmere Gabardine',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Length', value: '115cm Mid-Calf Length' },
+      { key: 'Belt', value: 'Self-Fabric Belt with Solid Brass Buckle' }
+    ],
+    rating: 5.0,
+    reviewCount: 47,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Double-Breasted Italian Wool Power Blazer',
+    slug: 'double-breasted-italian-wool-power-blazer',
+    brand: 'VALENTI',
+    description: 'Sculpted hourglass tailoring with sharp peaked lapels and gilded crest buttons in Biella Super 130s fine wool.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 12999,
+    salePrice: 10499,
+    images: [
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Noir Black', hex: '#0B0B0C', inStock: true },
+      { name: 'Parchment Ivory', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Biella Super 130s Merino Wool',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Shoulders', value: 'Structured Tailored Pads' },
+      { key: 'Lining', value: '100% Cupro Silk Lining' }
+    ],
+    rating: 4.9,
+    reviewCount: 33,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // =========================================================================
+  // 12. WOMEN: TROUSERS & SKIRTS - WIDE-LEG PALAZZO & SATIN SKIRTS
+  // =========================================================================
+  {
     name: 'High-Waisted Draped Palazzo Trousers',
     slug: 'high-waisted-draped-palazzo-trousers',
     brand: 'VALENTI',
@@ -1257,7 +1415,8 @@ const productsData = [
     salePrice: null,
     images: [
       'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
-      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
     ],
     colors: [
       { name: 'Classic Black', hex: '#151515', inStock: true },
@@ -1282,41 +1441,6 @@ const productsData = [
     isBestSeller: true
   },
   {
-    name: 'Cashmere-Blend Belted Trench Coat',
-    slug: 'cashmere-blend-belted-trench-coat',
-    brand: 'VALENTI',
-    description: 'The definitive transitional outer layer. Cut from water-repellent dense wool and cashmere gabardine with storm flaps, epaulettes, and horn belt buckle.',
-    category: 'Blazers & Outerwear',
-    subcategory: 'Trench Coats',
-    gender: 'women',
-    price: 18999,
-    salePrice: 15999,
-    images: [
-      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
-      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
-    ],
-    colors: [
-      { name: 'Royal Camel', hex: '#B8860B', inStock: true },
-      { name: 'Midnight Blue', hex: '#191970', inStock: true }
-    ],
-    sizes: [
-      { size: 'S', stock: 5 },
-      { size: 'M', stock: 8 },
-      { size: 'L', stock: 6 }
-    ],
-    material: '80% Italian Wool, 20% Cashmere Gabardine',
-    careInstructions: 'Specialist dry clean only.',
-    specifications: [
-      { key: 'Length', value: '115cm Mid-Calf Length' },
-      { key: 'Belt', value: 'Self-Fabric Belt with Solid Brass Buckle' }
-    ],
-    rating: 5.0,
-    reviewCount: 47,
-    isFeatured: true,
-    isNewArrival: true,
-    isBestSeller: true
-  },
-  {
     name: 'Liquid Satin Bias Midi Skirt',
     slug: 'liquid-satin-bias-midi-skirt',
     brand: 'VALENTI',
@@ -1328,7 +1452,8 @@ const productsData = [
     salePrice: 2799,
     images: [
       'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80',
-      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
     ],
     colors: [
       { name: 'Sage Mint', hex: '#9CAF88', inStock: true },
