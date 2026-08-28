@@ -56,12 +56,13 @@ const MegaMenu = ({ activeMenu, onClose }) => {
       ]
     },
     {
-      title: 'Trousers & Skirts',
+      title: 'Knitwear & Sets',
       items: [
-        { name: 'Draped Palazzo Trousers', path: '/women?category=Trousers+%26+Skirts&subcategory=Wide-Leg+Trousers' },
-        { name: 'Liquid Satin Bias Skirts', path: '/women?category=Trousers+%26+Skirts&subcategory=Satin+Skirts' },
-        { name: 'Pleated Midi Skirts', path: '/women?category=Trousers+%26+Skirts' },
-        { name: 'View All Women\'s Collection', path: '/women', isHighlight: true }
+        { name: 'Pure Mongolian Cashmere', path: '/women?category=Knitwear+%26+Cashmere' },
+        { name: 'Tweed & Tailored Sets', path: '/women?category=Co-ord+Sets+%26+Suits' },
+        { name: 'Silk Pajamas & Robes', path: '/women?category=Luxury+Loungewear+%26+Robes' },
+        { name: 'Palazzo Trousers & Skirts', path: '/women?category=Trousers+%26+Skirts' },
+        { name: 'View All Women\'s Couture', path: '/women', isHighlight: true }
       ]
     }
   ];

@@ -24,7 +24,10 @@ client/dist/
 Thumbs.db
 .vscode/
 .idea/
+.vite/
+client/.vite/
 
 # Large Archives
 *.zip
+
 

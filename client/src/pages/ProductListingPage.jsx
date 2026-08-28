@@ -102,7 +102,11 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
   };
 
   const clearAllFilters = () => {
-    setSearchParams({});
+    if (defaultGender) {
+      setSearchParams({ gender: defaultGender });
+    } else {
+      setSearchParams({});
+    }
     setPriceRange({ min: 0, max: 25000 });
     setCurrentPage(1);
   };
@@ -291,16 +295,23 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                       { name: 'Dresses', subs: ['Evening Gowns', 'Midi Dresses', 'Blazer Dresses'] },
                       { name: 'Tops & Shirts', subs: ['Silk Blouses', 'Formal Shirts'] },
                       { name: 'Blazers & Outerwear', subs: ['Tailored Blazers', 'Trench Coats'] },
-                      { name: 'Trousers & Skirts', subs: ['Wide-Leg Trousers', 'Satin Skirts'] }
+                      { name: 'Trousers & Skirts', subs: ['Wide-Leg Trousers', 'Satin Skirts'] },
+                      { name: 'Knitwear & Cashmere', subs: ['Cashmere Sweaters', 'Cardigans'] },
+                      { name: 'Co-ord Sets & Suits', subs: ['Tweed Sets', 'Power Suits'] },
+                      { name: 'Luxury Loungewear & Robes', subs: ['Silk Robes', 'Pajama Sets'] }
                     ]
                   : [
                       { name: 'Shirts', subs: ['Formal Shirts', 'Casual Shirts', 'Party Wear'] },
                       { name: 'T-Shirts', subs: ['Polo', 'Solid'] },
                       { name: 'Blazers & Suits', subs: ['Formal Blazers', 'Casual Blazers'] },
                       { name: 'Dresses', subs: ['Evening Gowns', 'Midi Dresses', 'Blazer Dresses'] },
+                      { name: 'Tops & Shirts', subs: ['Silk Blouses', 'Formal Shirts'] },
                       { name: 'Trousers & Chinos', subs: ['Formal Trousers', 'Chinos'] },
                       { name: 'Jeans', subs: ['Selvedge', 'Slim Fit'] },
-                      { name: 'Knitwear', subs: ['Cashmere Knitwear'] }
+                      { name: 'Knitwear', subs: ['Cashmere Knitwear'] },
+                      { name: 'Knitwear & Cashmere', subs: ['Cashmere Sweaters'] },
+                      { name: 'Co-ord Sets & Suits', subs: ['Tweed Sets'] },
+                      { name: 'Luxury Loungewear & Robes', subs: ['Silk Robes'] }
                     ]
                 ).map((catObj) => (
                   <div key={catObj.name} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
@@ -322,7 +333,7 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                       {categoryParam === catObj.name && <span style={{ fontSize: '0.7rem', color: 'var(--accent-gold)' }}>●</span>}
                     </button>
                     {/* Render Subcategories if Category is selected */}
-                    {categoryParam === catObj.name && (
+                    {categoryParam === catObj.name && catObj.subs && (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', paddingLeft: '12px', borderLeft: '2px solid var(--accent-gold-light)' }}>
                         {catObj.subs.map((sub) => (
                           <button
@@ -540,7 +551,12 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                   className="form-select"
                 >
                   <option value="all">All Categories</option>
-                  {['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans'].map((c) => (
+                  {(genderParam === 'women'
+                    ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                    : genderParam === 'men'
+                    ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
+                    : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                  ).map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>
