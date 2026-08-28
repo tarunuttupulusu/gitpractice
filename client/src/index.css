@@ -443,3 +443,119 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--accent-gold);
 }
 
+/* =========================================================
+   H&M DESIGN SYSTEM TOKENS (Scoped for Men's Section)
+   Source: hm.design.md
+   ========================================================= */
+.hm-section {
+  --hm-canvas: #ffffff;
+  --hm-ink: #000000;
+  --hm-ink-mid: #737373;
+  --hm-ink-soft: #323232;
+  --hm-hairline: #e6e6e6;
+  --hm-hairline-soft: #d9d9d9;
+  --hm-surface-low: #f2f2f2;
+  --hm-brand-red: #e50010;
+  --hm-brand-friday-navy: #374894;
+  --hm-radius: 0px;
+  --hm-font: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--hm-font);
+}
+
+.hm-btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 0 28px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+.hm-btn-primary:hover {
+  background-color: #323232;
+  border-color: #323232;
+  color: #ffffff;
+}
+
+.hm-btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 0 28px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+}
+.hm-btn-secondary:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.hm-sale-chip {
+  background-color: #e50010;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 6px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+
+.hm-product-card {
+  border-radius: 0px !important;
+  border: none !important;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: none !important;
+}
+
+.hm-subnav-pill {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+.hm-subnav-pill:hover,
+.hm-subnav-pill.active {
+  border-bottom-color: #000000;
+  font-weight: 600;
+}
+
+
