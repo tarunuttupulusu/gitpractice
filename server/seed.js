@@ -429,8 +429,8 @@ const productsData = [
     price: 8999,
     salePrice: 7299,
     images: [
-      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
-      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
     ],
     colors: [
       { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
@@ -608,7 +608,7 @@ const productsData = [
     price: 5999,
     salePrice: 4899,
     images: [
-      'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=1000&q=80',
       'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
     ],
     colors: [
@@ -679,8 +679,8 @@ const productsData = [
     price: 7299,
     salePrice: 5999,
     images: [
-      'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000&q=80',
-      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+      'https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=1000&q=80',
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
     ],
     colors: [
       { name: 'Baroque Gold', hex: '#C5A059', inStock: true }
