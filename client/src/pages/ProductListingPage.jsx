@@ -274,7 +274,12 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                 >
                   All Categories
                 </button>
-                {['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts'].map((cat) => (
+                {(genderParam === 'women'
+                  ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts']
+                  : genderParam === 'men'
+                  ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
+                  : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts']
+                ).map((cat) => (
                   <button
                     key={cat}
                     onClick={() => updateFilter('category', cat)}
@@ -484,7 +489,12 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                   className="form-select"
                 >
                   <option value="all">All Categories</option>
-                  {['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans'].map((c) => (
+                  {(genderParam === 'women'
+                    ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts']
+                    : genderParam === 'men'
+                    ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
+                    : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts']
+                  ).map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>

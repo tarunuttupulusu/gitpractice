@@ -342,7 +342,9 @@ const productsData = [
     isBestSeller: true
   },
 
-  // WOMEN PRODUCTS
+  // ==========================================
+  // WOMEN CATEGORY 1: DRESSES (10 Products)
+  // ==========================================
   {
     name: 'Aurelia Mulberry Silk Maxi Gown',
     slug: 'aurelia-mulberry-silk-maxi-gown',
@@ -418,6 +420,294 @@ const productsData = [
     isBestSeller: true
   },
   {
+    name: 'Venetian Velvet Corset Ballgown',
+    slug: 'venetian-velvet-corset-ballgown',
+    brand: 'VALENTI',
+    description: 'Sumptuous Italian silk-velvet with an interior boned corset bodice, off-the-shoulder draped neckline, and sweeping side slit.',
+    category: 'Dresses',
+    subcategory: 'Evening Gowns',
+    gender: 'women',
+    price: 14499,
+    salePrice: 12999,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Burgundy', hex: '#800020', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 4 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '80% Silk, 20% Rayon Italian Velvet',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Bodice', value: 'Internal Boned Bustier' },
+      { key: 'Detail', value: 'Thigh-High Asymmetrical Slit' }
+    ],
+    rating: 4.9,
+    reviewCount: 41,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Emerald Silk Satin Cutout Midi Dress',
+    slug: 'emerald-silk-satin-cutout-midi-dress',
+    brand: 'VALENTI',
+    description: 'An architectural silhouette featuring delicate waist keyhole cutouts, long fluid sleeves, and a column midi skirt with invisible back zip.',
+    category: 'Dresses',
+    subcategory: 'Midi Dresses',
+    gender: 'women',
+    price: 6799,
+    salePrice: 5499,
+    images: [
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true },
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 7 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% Mulberry Silk Charmeuse',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Cut', value: 'Waist Flank Cutouts' },
+      { key: 'Length', value: '120cm Midi' }
+    ],
+    rating: 4.8,
+    reviewCount: 29,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Grecian Pleated Chiffon Column Gown',
+    slug: 'grecian-pleated-chiffon-column-gown',
+    brand: 'VALENTI',
+    description: 'Hand-pleated micro sunburst chiffon cascading from a gilded choker neckline into an ethereal floor-grazing drape.',
+    category: 'Dresses',
+    subcategory: 'Evening Gowns',
+    gender: 'women',
+    price: 12999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true },
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 9 },
+      { size: 'M', stock: 11 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Silk Chiffon with Habotai Lining',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Neckline', value: 'Gold-Tone Metal Choker Halter' },
+      { key: 'Pleating', value: 'Permanent Sunburst Accordion Pleats' }
+    ],
+    rating: 5.0,
+    reviewCount: 33,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Off-Shoulder Crepe Mermaid Evening Dress',
+    slug: 'off-shoulder-crepe-mermaid-evening-dress',
+    brand: 'VALENTI',
+    description: 'Contoured heavy crepe dress sculpted to hug every curve before flaring into a soft mermaid hem with a concealed sweep train.',
+    category: 'Dresses',
+    subcategory: 'Evening Gowns',
+    gender: 'women',
+    price: 10499,
+    salePrice: 8999,
+    images: [
+      'https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Scarlet Ruby', hex: '#9B111E', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: 'Double-Weave Stretch Silk Crepe',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Neckline', value: 'Architectural Foldover Off-Shoulder' },
+      { key: 'Hem', value: 'Mermaid Trumpet Flared Hem' }
+    ],
+    rating: 4.9,
+    reviewCount: 46,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Liquid Gold Asymmetric Drape Slip Dress',
+    slug: 'liquid-gold-asymmetric-drape-slip-dress',
+    brand: 'VALENTI',
+    description: 'Crafted from luminous metallic gold satin with a one-shoulder diagonal drape and delicate spaghetti strap support.',
+    category: 'Dresses',
+    subcategory: 'Midi Dresses',
+    gender: 'women',
+    price: 5999,
+    salePrice: 4899,
+    images: [
+      'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=1000&q=80',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 7 }
+    ],
+    material: '100% Metallic Lustre Satin',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Shoulder', value: 'Asymmetric One-Shoulder Drape' },
+      { key: 'Fit', value: 'Bias-Cut Liquid Silhouette' }
+    ],
+    rating: 4.8,
+    reviewCount: 27,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'French Chantilly Lace Cocktail Dress',
+    slug: 'french-chantilly-lace-cocktail-dress',
+    brand: 'VALENTI',
+    description: 'Intricate floral French lace over a nude silk bodice with scallop edge hem and sheer long sleeves for evening soirées.',
+    category: 'Dresses',
+    subcategory: 'Midi Dresses',
+    gender: 'women',
+    price: 8499,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: 'Authentic French Chantilly Lace with 100% Silk Lining',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Sleeve', value: 'Sheer Scalloped Long Sleeve' },
+      { key: 'Length', value: '110cm Knee-Length Cocktail' }
+    ],
+    rating: 4.9,
+    reviewCount: 22,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Structured Brocade Jacquard Mini Dress',
+    slug: 'structured-brocade-jacquard-mini-dress',
+    brand: 'VALENTI',
+    description: 'Woven with gold and silver metallic threads in a baroque floral motif. Features sharp shoulders and double flap pockets.',
+    category: 'Dresses',
+    subcategory: 'Blazer Dresses',
+    gender: 'women',
+    price: 7299,
+    salePrice: 5999,
+    images: [
+      'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000&q=80',
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Baroque Gold', hex: '#C5A059', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 9 },
+      { size: 'L', stock: 4 }
+    ],
+    material: 'Italian Metallic Jacquard Brocade',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Structure', value: 'Reinforced Tailored Shoulders' },
+      { key: 'Buttons', value: 'Engraved Lion Crest Metal Buttons' }
+    ],
+    rating: 4.7,
+    reviewCount: 19,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Tiered Ruffle Tulle Gala Gown',
+    slug: 'tiered-ruffle-tulle-gala-gown',
+    brand: 'VALENTI',
+    description: 'A showstopping red carpet gown featuring over 60 meters of hand-pleated fine illusion tulle cascading in voluminous tiers.',
+    category: 'Dresses',
+    subcategory: 'Evening Gowns',
+    gender: 'women',
+    price: 16999,
+    salePrice: 13999,
+    images: [
+      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80',
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 6 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: '100% Fine Parisian Illusion Tulle',
+    careInstructions: 'Specialist haute couture dry clean only.',
+    specifications: [
+      { key: 'Volume', value: '5-Tier Flounced Sweep Skirt' },
+      { key: 'Corset', value: 'Bandeau Corset with Gripper Tape' }
+    ],
+    rating: 5.0,
+    reviewCount: 48,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 2: TOPS & SHIRTS (10 Products)
+  // ==========================================
+  {
     name: 'Draped Silk Crepe-de-Chine Blouse',
     slug: 'draped-silk-crepe-de-chine-blouse',
     brand: 'VALENTI',
@@ -453,6 +743,692 @@ const productsData = [
     isNewArrival: true,
     isBestSeller: false
   },
+  {
+    name: 'Victorian High-Collar Ruffle Silk Shirt',
+    slug: 'victorian-high-collar-ruffle-silk-shirt',
+    brand: 'VALENTI',
+    description: 'Dramatic standing ruffle collar and bib front in translucent silk georgette with genuine mother-of-pearl micro buttons.',
+    category: 'Tops & Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'women',
+    price: 4999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
+      { name: 'Jet Noir', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Silk Georgette',
+    careInstructions: 'Hand wash cold or gentle dry clean.',
+    specifications: [
+      { key: 'Collar', value: 'Pleated Victorian Standing Ruffle' },
+      { key: 'Buttons', value: 'Hand-Sewn Natural Shell Buttons' }
+    ],
+    rating: 4.9,
+    reviewCount: 31,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Structured Satin Corset Bustier Top',
+    slug: 'structured-satin-corset-bustier-top',
+    brand: 'VALENTI',
+    description: 'Precision-tailored underwire corset top featuring internal flexi-boning, sweetheart plunge neckline, and hook-and-eye closure.',
+    category: 'Tops & Shirts',
+    subcategory: 'Silk Blouses',
+    gender: 'women',
+    price: 3899,
+    salePrice: 3199,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 10 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 8 }
+    ],
+    material: 'Heavyweight Duchesse Satin with Cotton Twill Lining',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Boning', value: '12 Flexible Structural Stays' },
+      { key: 'Back', value: 'Adjustable Eyelet Lace-Up Back' }
+    ],
+    rating: 4.9,
+    reviewCount: 44,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Organza Balloon-Sleeve Peplum Blouse',
+    slug: 'organza-balloon-sleeve-peplum-blouse',
+    brand: 'VALENTI',
+    description: 'Voluminous sheer organza sleeves contrast with a fitted tailored torso and flared peplum waist.',
+    category: 'Tops & Shirts',
+    subcategory: 'Silk Blouses',
+    gender: 'women',
+    price: 4299,
+    salePrice: 3499,
+    images: [
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Ivory White', hex: '#FFFFF5', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 7 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: 'Silk Organza with Crepe Lining',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Sleeve', value: 'Oversized Tiered Balloon Sleeve' },
+      { key: 'Waist', value: 'Flared Architectural Peplum' }
+    ],
+    rating: 4.7,
+    reviewCount: 18,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Crisp Italian Poplin Tailored Button-Down',
+    slug: 'crisp-italian-poplin-tailored-button-down',
+    brand: 'VALENTI',
+    description: 'Woven from 120s two-ply Italian stretch cotton poplin. Cut with curved princess seams for a flattering, sharp fit under blazers.',
+    category: 'Tops & Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'women',
+    price: 3499,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=1000&q=80',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Crisp White', hex: '#FFFFFF', inStock: true },
+      { name: 'Sky Azure', hex: '#A4C8E1', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 12 },
+      { size: 'S', stock: 20 },
+      { size: 'M', stock: 18 },
+      { size: 'L', stock: 10 }
+    ],
+    material: '97% Italian Giza Cotton, 3% Elastane',
+    careInstructions: 'Machine wash warm. Warm steam iron.',
+    specifications: [
+      { key: 'Collar', value: 'Pointed Spread Collar' },
+      { key: 'Placket', value: 'Concealed Covered Button Front' }
+    ],
+    rating: 4.8,
+    reviewCount: 39,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Hand-Embroidered Silk Chiffon Camisole',
+    slug: 'hand-embroidered-silk-chiffon-camisole',
+    brand: 'VALENTI',
+    description: 'Airy silk camisole with delicate floral bullion embroidery across the neckline and adjustable French ribbon straps.',
+    category: 'Tops & Shirts',
+    subcategory: 'Silk Blouses',
+    gender: 'women',
+    price: 2999,
+    salePrice: 2399,
+    images: [
+      'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true },
+      { name: 'Ivory White', hex: '#FFFFF5', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 10 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% Silk Chiffon Double Layer',
+    careInstructions: 'Hand wash cold with gentle detergent.',
+    specifications: [
+      { key: 'Embroidery', value: 'Hand-Stitched Micro Floral Threadwork' },
+      { key: 'Straps', value: 'Adjustable Velvet Cord Straps' }
+    ],
+    rating: 4.6,
+    reviewCount: 15,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Cowl-Neck Liquid Satin Sleeveless Top',
+    slug: 'cowl-neck-liquid-satin-sleeveless-top',
+    brand: 'VALENTI',
+    description: 'Effortless luxury in liquid satin. Drapes naturally into a flattering cowl neck that catches ambient light with soft luster.',
+    category: 'Tops & Shirts',
+    subcategory: 'Silk Blouses',
+    gender: 'women',
+    price: 3299,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true },
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% Heavy Silky Satin',
+    careInstructions: 'Dry clean or delicate cold wash.',
+    specifications: [
+      { key: 'Neckline', value: 'Deep Fluid Cowl Neck' },
+      { key: 'Cut', value: 'Straight Relaxed Hem' }
+    ],
+    rating: 4.8,
+    reviewCount: 26,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Asymmetrical Draped Jersey Wrap Top',
+    slug: 'asymmetrical-draped-jersey-wrap-top',
+    brand: 'VALENTI',
+    description: 'Sculptural modal-silk jersey that twists around the waist for a bespoke wrap effect with gathered side ruching.',
+    category: 'Tops & Shirts',
+    subcategory: 'Silk Blouses',
+    gender: 'women',
+    price: 2899,
+    salePrice: 2299,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Classic Black', hex: '#151515', inStock: true },
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 12 },
+      { size: 'S', stock: 18 },
+      { size: 'M', stock: 15 },
+      { size: 'L', stock: 10 }
+    ],
+    material: '85% Micro Modal, 15% Silk Jersey',
+    careInstructions: 'Machine wash delicate cold.',
+    specifications: [
+      { key: 'Wrap', value: 'Integrated Cross-Body Wrap Tie' },
+      { key: 'Ruching', value: 'Side Seam Gathers' }
+    ],
+    rating: 4.7,
+    reviewCount: 20,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Sheer Floral Lace Inset Tuxedo Shirt',
+    slug: 'sheer-floral-lace-inset-tuxedo-shirt',
+    brand: 'VALENTI',
+    description: 'An alluring play on traditional tailoring with sheer guipure lace panels along the shoulders and spine.',
+    category: 'Tops & Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'women',
+    price: 4799,
+    salePrice: 3999,
+    images: [
+      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000&q=80',
+      'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: 'Italian Cotton Sateen & French Lace Insets',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Panels', value: 'Laser-Cut Guipure Lace Yoke' },
+      { key: 'Cuffs', value: 'Pleated French Cuffs with Gold Studs' }
+    ],
+    rating: 4.9,
+    reviewCount: 34,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Cashmere-Silk Ribbed Knit Polo Top',
+    slug: 'cashmere-silk-ribbed-knit-polo-top',
+    brand: 'VALENTI',
+    description: 'Spun from ultra-fine 18-gauge cashmere and silk yarn with a sleek Johnny polo collar and slim elongated sleeves.',
+    category: 'Tops & Shirts',
+    subcategory: 'Formal Shirts',
+    gender: 'women',
+    price: 5499,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1534126511673-b6899657816a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true },
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 9 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '70% Grade-A Mongolian Cashmere, 30% Mulberry Silk',
+    careInstructions: 'Hand wash cold with wool wash. Lay flat to dry.',
+    specifications: [
+      { key: 'Gauge', value: '18-Gauge Ultra-Fine Ribbed Knit' },
+      { key: 'Collar', value: 'Seamless Engineered Open Polo' }
+    ],
+    rating: 5.0,
+    reviewCount: 41,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 3: BLAZERS & OUTERWEAR (10 Products)
+  // ==========================================
+  {
+    name: 'Cashmere-Blend Belted Trench Coat',
+    slug: 'cashmere-blend-belted-trench-coat',
+    brand: 'VALENTI',
+    description: 'The definitive transitional outer layer. Cut from water-repellent dense wool and cashmere gabardine with storm flaps, epaulettes, and horn belt buckle.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 18999,
+    salePrice: 15999,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Camel', hex: '#B8860B', inStock: true },
+      { name: 'Midnight Blue', hex: '#191970', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 5 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '80% Italian Wool, 20% Cashmere Gabardine',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Length', value: '115cm Mid-Calf Length' },
+      { key: 'Belt', value: 'Self-Fabric Belt with Solid Brass Buckle' }
+    ],
+    rating: 5.0,
+    reviewCount: 47,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Double-Breasted Wool Tuxedo Blazer',
+    slug: 'double-breasted-wool-tuxedo-blazer',
+    brand: 'VALENTI',
+    description: 'Engineered with prominent peaked lapels, structured roped shoulders, and pure silk faille buttons. Power dressing at its finest.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 9999,
+    salePrice: 7999,
+    images: [
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 7 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: 'Super 120s Italian Virgin Wool & Silk Lapels',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Closure', value: '6-Button Double Breasted' },
+      { key: 'Lining', value: 'Full Bemberg Cupro Monogram Lining' }
+    ],
+    rating: 4.9,
+    reviewCount: 36,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Italian Bouclé Tweed Cropped Jacket',
+    slug: 'italian-boucle-tweed-cropped-jacket',
+    brand: 'VALENTI',
+    description: 'Heritage French-style bouclé tweed woven with metallic thread, trimmed with braided grosgrain and embossed lion crest buttons.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 8499,
+    salePrice: 6999,
+    images: [
+      'https://images.unsplash.com/photo-1550614000-4895a10e1bfd?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true },
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 6 },
+      { size: 'S', stock: 12 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '70% Wool, 20% Cotton, 10% Metallic Bouclé Yarn',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Cut', value: 'Cropped Boxy Silhouette' },
+      { key: 'Trim', value: 'Hand-Braided Cord Border' }
+    ],
+    rating: 4.8,
+    reviewCount: 25,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Sculpted Hourglass Crepe Tailored Blazer',
+    slug: 'sculpted-hourglass-crepe-tailored-blazer',
+    brand: 'VALENTI',
+    description: 'Flawlessly shaped to cinch the waist while maintaining structured shoulder line. Closes with a solitary statement horn button.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 8999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Classic Black', hex: '#151515', inStock: true },
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 7 }
+    ],
+    material: '100% Japanese Triacetate Crepe',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Silhouette', value: 'Dramatic Hourglass Darting' },
+      { key: 'Lapel', value: 'Narrow Notched Lapel' }
+    ],
+    rating: 4.9,
+    reviewCount: 29,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Waterproof Silk-Lined Classic Trench Coat',
+    slug: 'waterproof-silk-lined-classic-trench-coat',
+    brand: 'VALENTI',
+    description: 'Double-breasted timeless storm-proof trench made from high-density Egyptian cotton gabardine with silk-printed interior lining.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 16499,
+    salePrice: 13999,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Raw Sand', hex: '#D2B48C', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 8 }
+    ],
+    material: '100% High-Density Cotton Gabardine (Water Repellent)',
+    careInstructions: 'Professional dry clean.',
+    specifications: [
+      { key: 'Lining', value: 'Printed 100% Silk Twill Lining' },
+      { key: 'Hardware', value: 'Hand-Milled Tortoiseshell Buckles' }
+    ],
+    rating: 5.0,
+    reviewCount: 33,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Midnight Velvet Peaked Lapel Evening Jacket',
+    slug: 'midnight-velvet-peaked-lapel-evening-jacket',
+    brand: 'VALENTI',
+    description: 'Lustrous silk velvet tailored into an evening smoking jacket with contrasting black satin shawl lapels and jetted pockets.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 11299,
+    salePrice: 9499,
+    images: [
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true },
+      { name: 'Royal Burgundy', hex: '#800020', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 4 }
+    ],
+    material: '100% Italian Silk Velvet with Silk Satin Facing',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Lapel', value: 'Duchesse Satin Shawl Lapel' },
+      { key: 'Fit', value: 'Slim Smoking Jacket Cut' }
+    ],
+    rating: 4.9,
+    reviewCount: 28,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Reversible Double-Faced Cashmere Cape Coat',
+    slug: 'reversible-double-faced-cashmere-cape-coat',
+    brand: 'VALENTI',
+    description: 'Hand-stitched double-faced pure cashmere cape that drapes effortlessly over evening wear with leather toggle closures.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 22999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Royal Camel', hex: '#B8860B', inStock: true },
+      { name: 'Espresso Bronze', hex: '#4A3B32', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 4 },
+      { size: 'M', stock: 6 },
+      { size: 'L', stock: 4 }
+    ],
+    material: '100% Hand-Split Double-Face Cashmere',
+    careInstructions: 'Specialist luxury dry clean.',
+    specifications: [
+      { key: 'Craft', value: 'Hand-Rolled Seamless Edges' },
+      { key: 'Closure', value: 'Italian Calfskin Leather Toggles' }
+    ],
+    rating: 5.0,
+    reviewCount: 17,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Leather-Trimmed Longline Wool Overcoat',
+    slug: 'leather-trimmed-longline-wool-overcoat',
+    brand: 'VALENTI',
+    description: 'Heavyweight Melton wool tailored coat featuring nappa leather piping along collar, lapels, and cuffs for modern edge.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 19999,
+    salePrice: 16999,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 4 },
+      { size: 'S', stock: 8 },
+      { size: 'M', stock: 8 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Italian Melton Wool with Lambskin Leather Piping',
+    careInstructions: 'Specialist leather & wool dry clean.',
+    specifications: [
+      { key: 'Length', value: '125cm Ankle-Grazing Full Length' },
+      { key: 'Pocket', value: 'Flapped Hip Welt Pockets' }
+    ],
+    rating: 4.9,
+    reviewCount: 32,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Oversized Sartorial Pinstripe Wool Blazer',
+    slug: 'oversized-sartorial-pinstripe-wool-blazer',
+    brand: 'VALENTI',
+    description: 'Masculine-inspired relaxed tailoring in chalk-stripe virgin wool with dropped shoulders and deep flap pockets.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Tailored Blazers',
+    gender: 'women',
+    price: 9499,
+    salePrice: 7599,
+    images: [
+      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 7 }
+    ],
+    material: '100% Wool Flannel with Fine Chalk Stripes',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Fit', value: 'Relaxed Oversized Silhouette' },
+      { key: 'Buttons', value: 'Horn 2-Button Single Breasted' }
+    ],
+    rating: 4.8,
+    reviewCount: 27,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Draped Shawl-Collar Belted Wool Wrap Coat',
+    slug: 'draped-shawl-collar-belted-wool-wrap-coat',
+    brand: 'VALENTI',
+    description: 'Generous draped collar that frames the face, finished with an oversized tie belt and hidden interior anchor buttons.',
+    category: 'Blazers & Outerwear',
+    subcategory: 'Trench Coats',
+    gender: 'women',
+    price: 17499,
+    salePrice: 14299,
+    images: [
+      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Ivory Cream', hex: '#FFFFF0', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 6 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '90% Virgin Wool, 10% Cashmere',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Collar', value: 'Sculpted Cascading Shawl Collar' },
+      { key: 'Belt', value: 'Wide Tie Sash Belt' }
+    ],
+    rating: 5.0,
+    reviewCount: 40,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+
+  // ==========================================
+  // WOMEN CATEGORY 4: TROUSERS & SKIRTS (10 Products)
+  // ==========================================
   {
     name: 'High-Waisted Draped Palazzo Trousers',
     slug: 'high-waisted-draped-palazzo-trousers',
@@ -490,41 +1466,6 @@ const productsData = [
     isBestSeller: true
   },
   {
-    name: 'Cashmere-Blend Belted Trench Coat',
-    slug: 'cashmere-blend-belted-trench-coat',
-    brand: 'VALENTI',
-    description: 'The definitive transitional outer layer. Cut from water-repellent dense wool and cashmere gabardine with storm flaps, epaulettes, and horn belt buckle.',
-    category: 'Blazers & Outerwear',
-    subcategory: 'Trench Coats',
-    gender: 'women',
-    price: 18999,
-    salePrice: 15999,
-    images: [
-      'https://images.unsplash.com/photo-1548624313-0396c75e4b1a?w=1000&q=80',
-      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80'
-    ],
-    colors: [
-      { name: 'Royal Camel', hex: '#B8860B', inStock: true },
-      { name: 'Midnight Blue', hex: '#191970', inStock: true }
-    ],
-    sizes: [
-      { size: 'S', stock: 5 },
-      { size: 'M', stock: 8 },
-      { size: 'L', stock: 6 }
-    ],
-    material: '80% Italian Wool, 20% Cashmere Gabardine',
-    careInstructions: 'Specialist dry clean only.',
-    specifications: [
-      { key: 'Length', value: '115cm Mid-Calf Length' },
-      { key: 'Belt', value: 'Self-Fabric Belt with Solid Brass Buckle' }
-    ],
-    rating: 5.0,
-    reviewCount: 47,
-    isFeatured: true,
-    isNewArrival: true,
-    isBestSeller: true
-  },
-  {
     name: 'Liquid Satin Bias Midi Skirt',
     slug: 'liquid-satin-bias-midi-skirt',
     brand: 'VALENTI',
@@ -559,6 +1500,294 @@ const productsData = [
     isFeatured: false,
     isNewArrival: false,
     isBestSeller: true
+  },
+  {
+    name: 'Pleated Accordion Chiffon Maxi Skirt',
+    slug: 'pleated-accordion-chiffon-maxi-skirt',
+    brand: 'VALENTI',
+    description: 'Hundreds of micro knife pleats that open with mesmerizing fluid movement as you walk. Fitted with a grosgrain ribbon waistband.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Satin Skirts',
+    gender: 'women',
+    price: 4299,
+    salePrice: 3499,
+    images: [
+      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 8 },
+      { size: 'S', stock: 16 },
+      { size: 'M', stock: 14 },
+      { size: 'L', stock: 7 }
+    ],
+    material: 'Permanent Heat-Set Silk Chiffon with Satin Slip',
+    careInstructions: 'Dry clean recommended.',
+    specifications: [
+      { key: 'Pleats', value: 'Uniform 0.5cm Accordion Pleating' },
+      { key: 'Length', value: '98cm Floor-Skimming Maxi' }
+    ],
+    rating: 4.9,
+    reviewCount: 35,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Tailored High-Rise Cigarette Trousers',
+    slug: 'tailored-high-rise-cigarette-trousers',
+    brand: 'VALENTI',
+    description: 'Ankle-length slim tailored trousers with razor-sharp front crease, slant pockets, and subtle ankle vent.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Wide-Leg Trousers',
+    gender: 'women',
+    price: 3999,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Jet Noir', hex: '#111111', inStock: true },
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true }
+    ],
+    sizes: [
+      { size: '26', stock: 8 },
+      { size: '28', stock: 16 },
+      { size: '30', stock: 14 },
+      { size: '32', stock: 8 }
+    ],
+    material: 'Italian Stretch Wool Crepe',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Cut', value: 'Slim Tapered Ankle Grazing' },
+      { key: 'Crease', value: 'Permanent Front Press Crease' }
+    ],
+    rating: 4.8,
+    reviewCount: 26,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'Structured Wool-Silk Pleated Culottes',
+    slug: 'structured-wool-silk-pleated-culottes',
+    brand: 'VALENTI',
+    description: 'Wide cropped culotte silhouette with inverted front box pleats and a high tailored waistband.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Wide-Leg Trousers',
+    gender: 'women',
+    price: 4799,
+    salePrice: 3899,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Warm Camel', hex: '#C19A6B', inStock: true },
+      { name: 'Midnight Navy', hex: '#1B263B', inStock: true }
+    ],
+    sizes: [
+      { size: '26', stock: 6 },
+      { size: '28', stock: 12 },
+      { size: '30', stock: 10 },
+      { size: '32', stock: 6 }
+    ],
+    material: '70% Wool, 30% Silk Twill',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Inseam', value: '65cm Cropped Wide Culotte' },
+      { key: 'Pleating', value: 'Double Inverted Deep Box Pleats' }
+    ],
+    rating: 4.7,
+    reviewCount: 18,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Silk Duchesse Mermaid Maxi Skirt',
+    slug: 'silk-duchesse-mermaid-maxi-skirt',
+    brand: 'VALENTI',
+    description: 'Glamorous evening maxi skirt crafted from heavy structured silk duchesse, fitted through the hips before blooming into a graceful trumpet hem.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Satin Skirts',
+    gender: 'women',
+    price: 6499,
+    salePrice: 5199,
+    images: [
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80',
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true },
+      { name: 'Emerald Jewel', hex: '#004B23', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 5 },
+      { size: 'S', stock: 10 },
+      { size: 'M', stock: 10 },
+      { size: 'L', stock: 5 }
+    ],
+    material: '100% Silk Duchesse Satin (32 Momme)',
+    careInstructions: 'Specialist dry clean only.',
+    specifications: [
+      { key: 'Shape', value: 'Mermaid Column with Flared Godet Panels' },
+      { key: 'Closure', value: 'Invisible Center-Back Zip' }
+    ],
+    rating: 5.0,
+    reviewCount: 39,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'Belted Wide-Leg Normandy Linen Trousers',
+    slug: 'belted-wide-leg-normandy-linen-trousers',
+    brand: 'VALENTI',
+    description: 'Relaxed yet refined high-waisted linen trousers featuring a self-fabric buckle belt and generous deep front pockets.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Wide-Leg Trousers',
+    gender: 'women',
+    price: 4499,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Raw Sand', hex: '#D2B48C', inStock: true },
+      { name: 'Crisp White', hex: '#FFFFFF', inStock: true }
+    ],
+    sizes: [
+      { size: '26', stock: 8 },
+      { size: '28', stock: 15 },
+      { size: '30', stock: 14 },
+      { size: '32', stock: 8 }
+    ],
+    material: '100% Certified Normandy Flax Linen',
+    careInstructions: 'Machine wash cold gentle. Line dry.',
+    specifications: [
+      { key: 'Belt', value: 'Removable D-Ring Self Fabric Belt' },
+      { key: 'Fit', value: 'Breezy Wide-Leg Summer Drape' }
+    ],
+    rating: 4.8,
+    reviewCount: 23,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: false
+  },
+  {
+    name: 'Tiered Silk Crepe Flounce Midi Skirt',
+    slug: 'tiered-silk-crepe-flounce-midi-skirt',
+    brand: 'VALENTI',
+    description: 'Cascading asymmetrical flounced tiers crafted from lightweight silk crepe that catches the breeze with every step.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Satin Skirts',
+    gender: 'women',
+    price: 4999,
+    salePrice: 3999,
+    images: [
+      'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=1000&q=80',
+      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },
+      { name: 'Sage Mint', hex: '#9CAF88', inStock: true }
+    ],
+    sizes: [
+      { size: 'XS', stock: 7 },
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 12 },
+      { size: 'L', stock: 6 }
+    ],
+    material: '100% Silk Crepe-de-Chine',
+    careInstructions: 'Dry clean or gentle hand wash.',
+    specifications: [
+      { key: 'Tiering', value: '3 Asymmetric Cascading Ruffle Tiers' },
+      { key: 'Length', value: '85cm Midi' }
+    ],
+    rating: 4.7,
+    reviewCount: 21,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
+  },
+  {
+    name: 'Double-Pleated Fluid Satin Evening Pants',
+    slug: 'double-pleated-fluid-satin-evening-pants',
+    brand: 'VALENTI',
+    description: 'High-waisted trousers with tailored front double pleats, silk side tuxedo stripes, and fluid wide-leg puddle hem.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Wide-Leg Trousers',
+    gender: 'women',
+    price: 5299,
+    salePrice: 4299,
+    images: [
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
+      { name: 'Classic Black', hex: '#151515', inStock: true }
+    ],
+    sizes: [
+      { size: '26', stock: 8 },
+      { size: '28', stock: 14 },
+      { size: '30', stock: 12 },
+      { size: '32', stock: 6 }
+    ],
+    material: 'Heavyweight Triacetate Satin with Grosgrain Trim',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Stripe', value: 'Silk Satin Tuxedo Side Ribbon' },
+      { key: 'Pleats', value: 'Double Inward Deep Pleats' }
+    ],
+    rating: 4.9,
+    reviewCount: 30,
+    isFeatured: true,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'High-Waisted Flared Silk-Crepe Trousers',
+    slug: 'high-waisted-flared-silk-crepe-trousers',
+    brand: 'VALENTI',
+    description: 'Flattering 70s-inspired flared silhouette that fits snugly through the thigh before breaking into a generous bootcut flare.',
+    category: 'Trousers & Skirts',
+    subcategory: 'Wide-Leg Trousers',
+    gender: 'women',
+    price: 4899,
+    salePrice: null,
+    images: [
+      'https://images.unsplash.com/photo-1551803091-e20673f15770?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
+    ],
+    colors: [
+      { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
+      { name: 'Jet Noir', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: '26', stock: 6 },
+      { size: '28', stock: 12 },
+      { size: '30', stock: 10 },
+      { size: '32', stock: 5 }
+    ],
+    material: 'Double-Face Silk Crepe with Natural Stretch',
+    careInstructions: 'Dry clean only.',
+    specifications: [
+      { key: 'Flare', value: '55cm Bell Flared Hem' },
+      { key: 'Waist', value: 'Contoured High-Rise Without Belt Loops' }
+    ],
+    rating: 4.8,
+    reviewCount: 24,
+    isFeatured: false,
+    isNewArrival: true,
+    isBestSeller: false
   }
 ];
 
