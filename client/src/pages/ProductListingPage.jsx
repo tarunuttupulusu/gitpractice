@@ -102,7 +102,11 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
   };
 
   const clearAllFilters = () => {
-    setSearchParams({});
+    if (defaultGender) {
+      setSearchParams({ gender: defaultGender });
+    } else {
+      setSearchParams({});
+    }
     setPriceRange({ min: 0, max: 25000 });
     setCurrentPage(1);
   };
@@ -274,7 +278,12 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                 >
                   All Categories
                 </button>
-                {['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts'].map((cat) => (
+                {(genderParam === 'women'
+                  ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                  : genderParam === 'men'
+                  ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
+                  : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                ).map((cat) => (
                   <button
                     key={cat}
                     onClick={() => updateFilter('category', cat)}
@@ -484,7 +493,12 @@ const ProductListingPage = ({ defaultGender = null, forceNew = false, forceSale 
                   className="form-select"
                 >
                   <option value="all">All Categories</option>
-                  {['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans'].map((c) => (
+                  {(genderParam === 'women'
+                    ? ['Dresses', 'Tops & Shirts', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                    : genderParam === 'men'
+                    ? ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Trousers & Chinos', 'Jeans']
+                    : ['Shirts', 'T-Shirts', 'Blazers & Suits', 'Dresses', 'Tops & Shirts', 'Trousers & Chinos', 'Jeans', 'Blazers & Outerwear', 'Trousers & Skirts', 'Knitwear & Cashmere', 'Co-ord Sets & Suits', 'Luxury Loungewear & Robes']
+                  ).map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>
