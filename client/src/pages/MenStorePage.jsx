@@ -160,15 +160,15 @@ const MenStorePage = () => {
       {!isFiltered && (
         <>
           {/* Main Campaign Hero */}
-          <section style={{ position: 'relative', width: '100%', height: '70vh', minHeight: '480px', maxHeight: '680px', overflow: 'hidden' }}>
+          <section style={{ position: 'relative', width: '100%', height: '72vh', minHeight: '500px', maxHeight: '720px', overflow: 'hidden' }}>
             <img
-              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=85"
-              alt="H&M Men Collection"
+              src="/hm_images/imgi_154_b54872319bf5ee4c59cc8490503f7e14c79672dd.jpg"
+              alt="H&M Men T-Shirts & Tops Collection"
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
-                filter: 'brightness(0.88)'
+                filter: 'brightness(0.92)'
               }}
             />
             <div style={{
@@ -178,32 +178,32 @@ const MenStorePage = () => {
               flexDirection: 'column',
               justifyContent: 'flex-end',
               padding: 'clamp(2rem, 5vw, 4.5rem)',
-              background: 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)',
+              background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)',
               color: '#FFFFFF'
             }}>
-              <div style={{ maxWidth: '640px' }}>
+              <div style={{ maxWidth: '680px' }}>
                 <span style={{ fontSize: '12px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#FFFFFF', fontWeight: '500' }}>
-                  H&M MEN — AUTUMN / WINTER 2026
+                  H&M MEN — T-SHIRTS, POLOS & GRAPHICS
                 </span>
-                <h1 style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.4rem)', color: '#FFFFFF', fontWeight: '400', margin: '0.5rem 0 1rem 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
-                  THE MODERN SARTORIAL EDIT
+                <h1 style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.6rem)', color: '#FFFFFF', fontWeight: '400', margin: '0.5rem 0 1rem 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+                  THE T-SHIRTS & TOPS EDIT
                 </h1>
-                <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem', lineHeight: '1.6', maxWidth: '480px' }}>
-                  Sharp double-breasted blazers, airy pure French flax linen, and Japanese Kurabo selvedge denim built for daily elegance.
+                <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.92)', marginBottom: '1.5rem', lineHeight: '1.6', maxWidth: '520px' }}>
+                  From textured knit polos and relaxed heavyweight tees to printed graphic jerseys and sleek ribbed vests designed for everyday layering.
                 </p>
                 <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                  <Link to="/men?category=Blazers+%26+Suits" className="hm-btn-primary" style={{ backgroundColor: '#FFFFFF', color: '#000000', borderColor: '#FFFFFF' }}>
-                    SHOP TAILORING
+                  <Link to="/men?category=T-Shirts" className="hm-btn-primary" style={{ backgroundColor: '#FFFFFF', color: '#000000', borderColor: '#FFFFFF' }}>
+                    SHOP T-SHIRTS & POLOS
                   </Link>
                   <Link to="/men?newArrival=true" className="hm-btn-secondary" style={{ backgroundColor: 'transparent', color: '#FFFFFF', borderColor: '#FFFFFF' }}>
-                    VIEW NEW IN
+                    VIEW NEW ARRIVALS
                   </Link>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Quick Visual Category Circles / Tiles */}
+          {/* Quick Visual Category Circles / Tiles with Authentic H&M Imagery */}
           <section style={{ padding: '2.5rem 0', borderBottom: '1px solid #E6E6E6', backgroundColor: '#FFFFFF' }}>
             <div className="container">
               <div style={{
@@ -213,12 +213,12 @@ const MenStorePage = () => {
                 textAlign: 'center'
               }}>
                 {[
-                  { name: 'SHIRTS', img: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&q=80', link: '/men?category=Shirts' },
-                  { name: 'T-SHIRTS & POLOS', img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=400&q=80', link: '/men?category=T-Shirts' },
-                  { name: 'BLAZERS & SUITS', img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&q=80', link: '/men?category=Blazers+%26+Suits' },
-                  { name: 'TROUSERS & CHINOS', img: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400&q=80', link: '/men?category=Trousers+%26+Chinos' },
-                  { name: 'JEANS & DENIM', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&q=80', link: '/men?category=Jeans' },
-                  { name: 'CASHMERE KNITWEAR', img: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&q=80', link: '/men?category=Knitwear' }
+                  { name: 'REGULAR FIT TEES', img: '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg', link: '/men?category=T-Shirts&subcategory=Solid' },
+                  { name: 'POLO SHIRTS', img: '/hm_images/imgi_160_b13162f9f0c830f26f6810f21abfb820a2d8a45d.jpg', link: '/men?category=T-Shirts&subcategory=Polo' },
+                  { name: 'GRAPHIC TEES', img: '/hm_images/imgi_114_ec7bd80bd8cd044fce7b41368554e543c92b94fd.jpg', link: '/men?category=T-Shirts&subcategory=Graphics' },
+                  { name: 'RELAXED & OVERSIZED', img: '/hm_images/imgi_253_f7e22aff477951526d0dd1dd7a402e2eedeaad7c.jpg', link: '/men?category=T-Shirts&subcategory=Relaxed+Fit' },
+                  { name: 'SHIRTS & OVERSHIRTS', img: '/hm_images/imgi_183_a3f7a019f0de269d82aeb1f4307476c8fa123935.jpg', link: '/men?category=Shirts' },
+                  { name: 'PREMIUM SELECTION', img: '/hm_images/imgi_172_f4134b2a3f502b43952d4470622b17fd1ccbaf60.jpg', link: '/men?category=Knitwear' }
                 ].map((cat, i) => (
                   <Link key={i} to={cat.link} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
                     <div style={{
@@ -256,14 +256,14 @@ const MenStorePage = () => {
                 {/* Left Card */}
                 <div style={{ position: 'relative', aspectRatio: '4/3', backgroundColor: '#F2F2F2', overflow: 'hidden' }}>
                   <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
-                    alt="Italian Wool Blazers"
+                    src="/hm_images/imgi_218_63bafc753c06bc078da58a0bdcb5568649300d3f.jpg"
+                    alt="H&M Men Textured Polo Shirts"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                   <div style={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)',
+                    background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 60%)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
@@ -271,13 +271,13 @@ const MenStorePage = () => {
                     color: '#FFFFFF'
                   }}>
                     <span style={{ fontSize: '11px', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FFFFFF' }}>
-                      PREMIUM SELECTION
+                      SUMMER MUST-HAVES
                     </span>
                     <h3 style={{ fontSize: '1.6rem', color: '#FFFFFF', fontWeight: '400', margin: '4px 0 12px 0' }}>
-                      ITALIAN WOOL SUITING
+                      TEXTURED KNIT POLOS
                     </h3>
-                    <Link to="/men?category=Blazers+%26+Suits" className="hm-btn-primary" style={{ width: 'fit-content', backgroundColor: '#FFFFFF', color: '#000000', height: '42px', fontSize: '12px' }}>
-                      SHOP NOW
+                    <Link to="/men?category=T-Shirts&subcategory=Polo" className="hm-btn-primary" style={{ width: 'fit-content', backgroundColor: '#FFFFFF', color: '#000000', height: '42px', fontSize: '12px' }}>
+                      SHOP POLOS
                     </Link>
                   </div>
                 </div>
@@ -285,14 +285,14 @@ const MenStorePage = () => {
                 {/* Right Card */}
                 <div style={{ position: 'relative', aspectRatio: '4/3', backgroundColor: '#F2F2F2', overflow: 'hidden' }}>
                   <img
-                    src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80"
-                    alt="Linen & Casual Shirts"
+                    src="/hm_images/imgi_190_694baff7688600431d5b15cbb3f029c1aee38f08.jpg"
+                    alt="H&M Men Relaxed Fit T-Shirts"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                   <div style={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)',
+                    background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 60%)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
@@ -300,13 +300,13 @@ const MenStorePage = () => {
                     color: '#FFFFFF'
                   }}>
                     <span style={{ fontSize: '11px', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#FFFFFF' }}>
-                      SUMMER ESSENTIALS
+                      EVERYDAY ELEVATED
                     </span>
                     <h3 style={{ fontSize: '1.6rem', color: '#FFFFFF', fontWeight: '400', margin: '4px 0 12px 0' }}>
-                      NORMANDY FLAX LINEN
+                      RELAXED HEAVYWEIGHT TEES
                     </h3>
-                    <Link to="/men?category=Shirts&subcategory=Casual+Shirts" className="hm-btn-primary" style={{ width: 'fit-content', backgroundColor: '#FFFFFF', color: '#000000', height: '42px', fontSize: '12px' }}>
-                      DISCOVER MORE
+                    <Link to="/men?category=T-Shirts&subcategory=Solid" className="hm-btn-primary" style={{ width: 'fit-content', backgroundColor: '#FFFFFF', color: '#000000', height: '42px', fontSize: '12px' }}>
+                      SHOP TEES
                     </Link>
                   </div>
                 </div>

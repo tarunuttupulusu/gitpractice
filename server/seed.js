@@ -482,157 +482,232 @@ const productsData = [
   },
 
   // =========================================================================
-  // 4. MEN: T-SHIRTS - SUPIMA POLOS & SOLID TEES
+  // 4. MEN: T-SHIRTS & TOPS - AUTHENTIC H&M POLOS, TEES, GRAPHICS & VESTS
   // =========================================================================
   {
-    name: 'Supima Silk-Touch Pique Polo',
-    slug: 'supima-silk-touch-pique-polo',
-    brand: 'VALENTI',
-    description: 'Double-mercerized long-staple Supima cotton gives this polo a liquid silk luster, resilient structure, and non-curling knit collar.',
+    name: 'H&M Regular Fit Cotton Pique Polo Shirt',
+    slug: 'hm-regular-fit-cotton-pique-polo-shirt',
+    brand: 'H&M',
+    description: 'Polo shirt in cotton pique with a ribbed collar, button placket, short sleeves with ribbed trims, and straight-cut hem with small side slits.',
     category: 'T-Shirts',
     subcategory: 'Polo',
     gender: 'men',
-    price: 2499,
-    salePrice: 1999,
+    price: 1499,
+    salePrice: 1199,
     images: [
-      'https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=1000&q=80',
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000&q=80',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1000&q=80'
+      '/hm_images/imgi_160_b13162f9f0c830f26f6810f21abfb820a2d8a45d.jpg',
+      '/hm_images/imgi_218_63bafc753c06bc078da58a0bdcb5568649300d3f.jpg',
+      '/hm_images/imgi_172_f4134b2a3f502b43952d4470622b17fd1ccbaf60.jpg'
     ],
     colors: [
-      { name: 'Forest Emerald', hex: '#1C3F3A', inStock: true },
-      { name: 'Burgundy Wine', hex: '#58111A', inStock: true },
-      { name: 'Jet Black', hex: '#101010', inStock: true }
+      { name: 'Dark Sage Green', hex: '#4A5D4E', inStock: true },
+      { name: 'Classic Navy', hex: '#1C2E4A', inStock: true },
+      { name: 'Pure White', hex: '#FFFFFF', inStock: true }
     ],
     sizes: [
-      { size: 'S', stock: 15 },
-      { size: 'M', stock: 25 },
-      { size: 'L', stock: 20 },
-      { size: 'XL', stock: 12 }
+      { size: 'S', stock: 18 },
+      { size: 'M', stock: 30 },
+      { size: 'L', stock: 25 },
+      { size: 'XL', stock: 14 }
     ],
-    material: '100% American Supima Cotton (Double Mercerized)',
-    careInstructions: 'Machine wash cold. Reshape and dry flat.',
+    material: '100% Breathable Cotton Pique (210 GSM)',
+    careInstructions: 'Machine wash 40°C. Medium iron.',
     specifications: [
-      { key: 'Placket', value: 'Hidden 3-Button Placket' },
-      { key: 'Weight', value: '220 GSM Dense Pique' }
+      { key: 'Fit', value: 'Regular Fit' },
+      { key: 'Collar', value: 'Ribbed Knit Spread Collar' },
+      { key: 'Placket', value: 'Classic 2-Button Front' }
     ],
     rating: 4.8,
-    reviewCount: 35,
-    isFeatured: false,
-    isNewArrival: true,
-    isBestSeller: true
-  },
-  {
-    name: 'Riviera Knitted Johnny-Collar Polo',
-    slug: 'riviera-knitted-johnny-collar-polo',
-    brand: 'VALENTI',
-    description: 'Inspired by 1960s Italian resort wear. Knitted from ultra-fine 14-gauge Giza cotton with a buttonless Johnny collar and ribbed retro cuffs.',
-    category: 'T-Shirts',
-    subcategory: 'Polo',
-    gender: 'men',
-    price: 3299,
-    salePrice: 2699,
-    images: [
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000&q=80',
-      'https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=1000&q=80',
-      'https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=1000&q=80'
-    ],
-    colors: [
-      { name: 'Oatmeal Heather', hex: '#D7D2C8', inStock: true },
-      { name: 'Navy Nautical', hex: '#1C2E4A', inStock: true }
-    ],
-    sizes: [
-      { size: 'S', stock: 10 },
-      { size: 'M', stock: 20 },
-      { size: 'L', stock: 16 },
-      { size: 'XL', stock: 8 }
-    ],
-    material: '100% 14-Gauge Long-Staple Combed Giza Cotton',
-    careInstructions: 'Hand wash cold or dry clean.',
-    specifications: [
-      { key: 'Collar', value: 'Buttonless Open Johnny Collar' },
-      { key: 'Knit', value: 'Full Fashioned Milanese Knit' }
-    ],
-    rating: 4.9,
-    reviewCount: 29,
-    isFeatured: true,
-    isNewArrival: true,
-    isBestSeller: false
-  },
-  {
-    name: '280 GSM Heavyweight Supima Crewneck Tee',
-    slug: '280-gsm-heavyweight-supima-crewneck-tee',
-    brand: 'VALENTI',
-    description: 'The definitive luxury heavyweight t-shirt. Crafted from 280 GSM combed Supima jersey with a bound 1-inch ribbed neck that never stretches out.',
-    category: 'T-Shirts',
-    subcategory: 'Solid',
-    gender: 'men',
-    price: 1899,
-    salePrice: null,
-    images: [
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000&q=80',
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1000&q=80',
-      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1000&q=80'
-    ],
-    colors: [
-      { name: 'Optic White', hex: '#FFFFFF', inStock: true },
-      { name: 'Heavy Obsidian', hex: '#0D0F12', inStock: true },
-      { name: 'Warm Cashmere Grey', hex: '#9E9D99', inStock: true }
-    ],
-    sizes: [
-      { size: 'S', stock: 20 },
-      { size: 'M', stock: 35 },
-      { size: 'L', stock: 30 },
-      { size: 'XL', stock: 15 }
-    ],
-    material: '100% Supima Long-Staple Cotton (280 GSM)',
-    careInstructions: 'Machine wash cold inside out. Hang dry.',
-    specifications: [
-      { key: 'Collar', value: 'Reinforced 1-inch Heavy Ribbed Collar' },
-      { key: 'Fit', value: 'Relaxed Tailored Boxy Silhouette' }
-    ],
-    rating: 4.9,
-    reviewCount: 48,
+    reviewCount: 42,
     isFeatured: true,
     isNewArrival: false,
     isBestSeller: true
   },
   {
-    name: 'Minimalist Raw-Edge Modal Relaxed Tee',
-    slug: 'minimalist-raw-edge-modal-relaxed-tee',
-    brand: 'VALENTI',
-    description: 'An ultra-soft, fluid drape blend of micro-modal and Peruvian Pima cotton with raw-cut hems for an effortless quiet luxury aesthetic.',
+    name: 'H&M Relaxed Fit Open-Collar Textured Resort Polo',
+    slug: 'hm-relaxed-fit-open-collar-textured-resort-polo',
+    brand: 'H&M',
+    description: 'Resort polo in soft, textured waffle-knit cotton blend. Features a buttonless open collar, relaxed dropped shoulders, and straight hem.',
     category: 'T-Shirts',
-    subcategory: 'Solid',
+    subcategory: 'Polo',
     gender: 'men',
-    price: 2199,
-    salePrice: 1799,
+    price: 1999,
+    salePrice: 1499,
     images: [
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=1000&q=80',
-      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=1000&q=80',
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1000&q=80'
+      '/hm_images/imgi_218_63bafc753c06bc078da58a0bdcb5568649300d3f.jpg',
+      '/hm_images/imgi_160_b13162f9f0c830f26f6810f21abfb820a2d8a45d.jpg',
+      '/hm_images/imgi_178_2753022983cb076e9fabb7502d888ef0a0a1aac5.jpg'
     ],
     colors: [
-      { name: 'Washed Charcoal', hex: '#2C3038', inStock: true },
-      { name: 'Desert Sand', hex: '#C2B8A3', inStock: true }
+      { name: 'Oatmeal Melange', hex: '#D7D2C8', inStock: true },
+      { name: 'Terracotta Brown', hex: '#8B4513', inStock: true }
     ],
     sizes: [
-      { size: 'S', stock: 14 },
+      { size: 'S', stock: 12 },
       { size: 'M', stock: 22 },
       { size: 'L', stock: 18 },
       { size: 'XL', stock: 9 }
     ],
-    material: '50% Austrian Micro-Modal, 50% Peruvian Pima Cotton',
-    careInstructions: 'Machine wash delicate cold.',
+    material: '80% Cotton, 20% Polyester Waffle Knit',
+    careInstructions: 'Machine wash warm. Reshape flat.',
     specifications: [
-      { key: 'Edge', value: 'Artisanal Clean Raw Cut' },
-      { key: 'Weight', value: '170 GSM Lightweight Fluid' }
+      { key: 'Collar', value: 'Buttonless Camp / Johnny Collar' },
+      { key: 'Texture', value: 'Waffle Knit Pique' }
+    ],
+    rating: 4.9,
+    reviewCount: 35,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Regular Fit Round-Neck Solid T-Shirt',
+    slug: 'hm-regular-fit-round-neck-solid-t-shirt',
+    brand: 'H&M',
+    description: 'Classic T-shirt in soft cotton jersey with a ribbed crew neck and straight-cut hem. An everyday staple built for long-lasting comfort.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 799,
+    salePrice: null,
+    images: [
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg',
+      '/hm_images/imgi_180_5bd8ea82ab6f4eb7a28023ede84a703bd5b15c19.jpg',
+      '/hm_images/imgi_120_e3221b52392aac6227101891acffd665f122bba5.jpg'
+    ],
+    colors: [
+      { name: 'Optic White', hex: '#FFFFFF', inStock: true },
+      { name: 'Washed Black', hex: '#1E1E1E', inStock: true },
+      { name: 'Heather Grey', hex: '#B0B0B0', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 25 },
+      { size: 'M', stock: 40 },
+      { size: 'L', stock: 35 },
+      { size: 'XL', stock: 20 }
+    ],
+    material: '100% BCI Certified Soft Cotton Jersey',
+    careInstructions: 'Machine wash 40°C. Tumble dry medium.',
+    specifications: [
+      { key: 'Neckline', value: 'Ribbed Crewneck' },
+      { key: 'Weight', value: '180 GSM Everyday Jersey' }
     ],
     rating: 4.8,
-    reviewCount: 24,
+    reviewCount: 65,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Relaxed Fit Heavyweight Graphic T-Shirt',
+    slug: 'hm-relaxed-fit-heavyweight-graphic-t-shirt',
+    brand: 'H&M',
+    description: 'Oversized T-shirt in heavyweight 240 GSM cotton jersey with bold front and back streetwear graphic typography prints and dropped shoulders.',
+    category: 'T-Shirts',
+    subcategory: 'Graphics',
+    gender: 'men',
+    price: 1299,
+    salePrice: 999,
+    images: [
+      '/hm_images/imgi_114_ec7bd80bd8cd044fce7b41368554e543c92b94fd.jpg',
+      '/hm_images/imgi_190_694baff7688600431d5b15cbb3f029c1aee38f08.jpg',
+      '/hm_images/imgi_253_f7e22aff477951526d0dd1dd7a402e2eedeaad7c.jpg'
+    ],
+    colors: [
+      { name: 'Vintage Washed Black', hex: '#262626', inStock: true },
+      { name: 'Chalk White', hex: '#F5F5F0', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 15 },
+      { size: 'M', stock: 28 },
+      { size: 'L', stock: 24 },
+      { size: 'XL', stock: 12 }
+    ],
+    material: '100% Heavyweight Cotton (240 GSM)',
+    careInstructions: 'Wash cold inside-out to preserve graphic prints.',
+    specifications: [
+      { key: 'Fit', value: 'Relaxed Oversized Fit' },
+      { key: 'Print', value: 'High Density Screen Print' }
+    ],
+    rating: 4.9,
+    reviewCount: 38,
+    isFeatured: true,
+    isNewArrival: true,
+    isBestSeller: true
+  },
+  {
+    name: 'H&M Loose Fit Vintage Washed Pocket Tee',
+    slug: 'hm-loose-fit-vintage-washed-pocket-tee',
+    brand: 'H&M',
+    description: 'Loose-fit T-shirt in acid-washed cotton jersey with an open chest patch pocket, wider sleeves, and a vintage faded look.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 1199,
+    salePrice: 899,
+    images: [
+      '/hm_images/imgi_190_694baff7688600431d5b15cbb3f029c1aee38f08.jpg',
+      '/hm_images/imgi_233_7bf47ec3eaa30e1f1e02ccc8b69a7e76ded0f4b1.jpg',
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg'
+    ],
+    colors: [
+      { name: 'Faded Charcoal', hex: '#333333', inStock: true },
+      { name: 'Washed Olive', hex: '#556B2F', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 14 },
+      { size: 'M', stock: 22 },
+      { size: 'L', stock: 19 },
+      { size: 'XL', stock: 10 }
+    ],
+    material: '100% Acid-Washed Cotton Jersey',
+    careInstructions: 'Machine wash 30°C.',
+    specifications: [
+      { key: 'Pocket', value: 'Single Chest Patch Pocket' },
+      { key: 'Fit', value: 'Loose Boxy Fit' }
+    ],
+    rating: 4.7,
+    reviewCount: 29,
     isFeatured: false,
     isNewArrival: true,
     isBestSeller: false
+  },
+  {
+    name: 'H&M Slim Fit Ribbed Cotton Tank Top Vest',
+    slug: 'hm-slim-fit-ribbed-cotton-tank-top-vest',
+    brand: 'H&M',
+    description: 'Fitted vest top in ribbed 2x2 stretch cotton jersey with a scoop neckline and deep armholes. Ideal for summer layering under overshirts.',
+    category: 'T-Shirts',
+    subcategory: 'Solid',
+    gender: 'men',
+    price: 699,
+    salePrice: 499,
+    images: [
+      '/hm_images/imgi_180_5bd8ea82ab6f4eb7a28023ede84a703bd5b15c19.jpg',
+      '/hm_images/imgi_108_651c6936cdc21c88ae8410626f15d5b641a402ab.jpg',
+      '/hm_images/imgi_154_b54872319bf5ee4c59cc8490503f7e14c79672dd.jpg'
+    ],
+    colors: [
+      { name: 'Pure White', hex: '#FFFFFF', inStock: true },
+      { name: 'Jet Black', hex: '#111111', inStock: true }
+    ],
+    sizes: [
+      { size: 'S', stock: 20 },
+      { size: 'M', stock: 35 },
+      { size: 'L', stock: 28 },
+      { size: 'XL', stock: 15 }
+    ],
+    material: '95% Cotton, 5% Elastane Ribbed Knit',
+    careInstructions: 'Machine wash warm.',
+    specifications: [
+      { key: 'Neckline', value: 'Deep Scoop Neck' },
+      { key: 'Rib', value: '2x2 Stretch Rib Knit' }
+    ],
+    rating: 4.8,
+    reviewCount: 51,
+    isFeatured: false,
+    isNewArrival: false,
+    isBestSeller: true
   },
 
   // =========================================================================
