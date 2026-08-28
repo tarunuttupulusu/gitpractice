@@ -392,8 +392,7 @@ const productsData = [
     salePrice: 9499,
     images: [
       'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80',
-      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
-      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80'
     ],
     colors: [
       { name: 'Champagne Gold', hex: '#D4AF37', inStock: true },
@@ -429,8 +428,8 @@ const productsData = [
     price: 8999,
     salePrice: 7299,
     images: [
-      'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=1000&q=80',
-      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
+      'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1000&q=80',
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80'
     ],
     colors: [
       { name: 'Pure Ivory', hex: '#FDFBF7', inStock: true },
@@ -466,7 +465,7 @@ const productsData = [
     salePrice: 12999,
     images: [
       'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80',
-      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
+      'https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=1000&q=80'
     ],
     colors: [
       { name: 'Royal Burgundy', hex: '#800020', inStock: true },
@@ -502,7 +501,7 @@ const productsData = [
     salePrice: 5499,
     images: [
       'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80',
-      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
     ],
     colors: [
       { name: 'Emerald Jewel', hex: '#004B23', inStock: true },
@@ -608,7 +607,7 @@ const productsData = [
     price: 5999,
     salePrice: 4899,
     images: [
-      'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=1000&q=80',
+      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1000&q=80',
       'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1000&q=80'
     ],
     colors: [
@@ -644,7 +643,7 @@ const productsData = [
     salePrice: null,
     images: [
       'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000&q=80',
-      'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=1000&q=80'
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
     ],
     colors: [
       { name: 'Jet Noir', hex: '#111111', inStock: true },
@@ -669,37 +668,38 @@ const productsData = [
     isBestSeller: true
   },
   {
-    name: 'Structured Brocade Jacquard Mini Dress',
-    slug: 'structured-brocade-jacquard-mini-dress',
+    name: 'Haute Couture Runway Silk Column Gown',
+    slug: 'haute-couture-runway-silk-column-gown',
     brand: 'VALENTI',
-    description: 'Woven with gold and silver metallic threads in a baroque floral motif. Features sharp shoulders and double flap pockets.',
+    description: 'Woven from scarlet Italian silk mikado in a sculpted architectural column silhouette, accented with dramatic back capelet fold.',
     category: 'Dresses',
-    subcategory: 'Blazer Dresses',
+    subcategory: 'Evening Gowns',
     gender: 'women',
-    price: 7299,
-    salePrice: 5999,
+    price: 13999,
+    salePrice: 11499,
     images: [
-      'https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=1000&q=80',
-      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1000&q=80'
+      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1000&q=80',
+      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80'
     ],
     colors: [
-      { name: 'Baroque Gold', hex: '#C5A059', inStock: true }
+      { name: 'Crimson Red', hex: '#DC143C', inStock: true },
+      { name: 'Midnight Onyx', hex: '#0B0B0C', inStock: true }
     ],
     sizes: [
-      { size: 'XS', stock: 8 },
+      { size: 'XS', stock: 6 },
       { size: 'S', stock: 12 },
-      { size: 'M', stock: 9 },
+      { size: 'M', stock: 10 },
       { size: 'L', stock: 4 }
     ],
-    material: 'Italian Metallic Jacquard Brocade',
-    careInstructions: 'Dry clean only.',
+    material: '100% Italian Silk Mikado',
+    careInstructions: 'Specialist haute couture dry clean only.',
     specifications: [
-      { key: 'Structure', value: 'Reinforced Tailored Shoulders' },
-      { key: 'Buttons', value: 'Engraved Lion Crest Metal Buttons' }
+      { key: 'Structure', value: 'Architectural Column with Capelet' },
+      { key: 'Length', value: '155cm Floor-Sweeping Length' }
     ],
-    rating: 4.7,
-    reviewCount: 19,
-    isFeatured: false,
+    rating: 4.9,
+    reviewCount: 28,
+    isFeatured: true,
     isNewArrival: true,
     isBestSeller: false
   },
@@ -714,8 +714,8 @@ const productsData = [
     price: 16999,
     salePrice: 13999,
     images: [
-      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80',
-      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=1000&q=80'
+      'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&q=80',
+      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1000&q=80'
     ],
     colors: [
       { name: 'Dusty Blush', hex: '#D8A49B', inStock: true },

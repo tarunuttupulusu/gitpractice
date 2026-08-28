@@ -20,17 +20,14 @@ import adminRoutes from './routes/adminRoutes.js';
 
 dotenv.config();
 
-// Initialize database and auto-seed if empty
+// Initialize database and seed
 const initApp = async () => {
   await connectDB();
   try {
-    const productCount = await Product.countDocuments();
-    if (productCount === 0) {
-      console.log('🌱 Empty catalog detected. Running automatic initial database seed...');
-      await seedDatabase(false);
-    }
+    console.log('🌱 Seeding database catalog with latest products...');
+    await seedDatabase(false);
   } catch (err) {
-    console.error('Auto-seed check error:', err.message);
+    console.error('Database seed error:', err.message);
   }
 };
 
